@@ -5,58 +5,182 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shumail Zafar</title>
 <meta name="description" content="Shumail Zafar: computer science student working toward building AI systems.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231c1917'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ESZ%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231a1a18'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' fill='white' text-anchor='middle'%3ESZ%3C/text%3E%3C/svg%3E">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #fbfbfa;
+    --surface: #ffffff;
+    --ink: #1a1a18;
+    --muted: #6f6e69;
+    --line: #e8e6e1;
+    --accent: #0d5c3f;
+    --accent-soft: #e9f2ed;
+  }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background: #fff; color: #1c1917; line-height: 1.7;
+    background: var(--bg); color: var(--ink); line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 620px; margin: 0 auto; padding: 70px 24px 60px; }
-  h1 { font-size: 32px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 18px; }
-  p { margin-bottom: 16px; color: #292524; }
-  h2 { font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: #78716c; margin: 42px 0 14px; }
-  ul { list-style: none; margin-bottom: 8px; }
-  li { margin-bottom: 12px; color: #292524; }
-  li .note { color: #78716c; }
-  a { color: #1c1917; text-decoration: underline; text-underline-offset: 3px; }
-  a:hover { color: #57534e; }
-  .links a { margin-right: 18px; }
-  footer { margin-top: 56px; color: #a8a29e; font-size: 14px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  nav {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 20px 0; border-bottom: 1px solid var(--line);
+  }
+  nav .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+  nav .mark {
+    width: 32px; height: 32px; border-radius: 8px; background: var(--ink); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, serif; font-size: 15px;
+  }
+  nav .brand span { font-weight: 700; font-size: 16px; }
+  nav .links a { margin-left: 22px; color: var(--muted); text-decoration: none; font-size: 15px; }
+  nav .links a:hover { color: var(--ink); }
+
+  header.hero { padding: 84px 0 64px; }
+  .eyebrow {
+    display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 1.4px;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 16px;
+  }
+  header.hero h1 { font-size: 52px; line-height: 1.08; letter-spacing: -1.5px; margin-bottom: 18px; }
+  header.hero p.lead { font-size: 20px; color: var(--muted); max-width: 580px; }
+
+  section { padding: 40px 0; }
+  .label {
+    font-size: 13px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid var(--line);
+  }
+  .about p { font-size: 17px; color: #33322f; margin-bottom: 14px; max-width: 640px; }
+
+  .cards { display: grid; gap: 16px; }
+  @media (min-width: 600px) { .cards { grid-template-columns: 1fr 1fr; } }
+  .card {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 26px; text-decoration: none; color: inherit; display: block;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card h3 { font-size: 18px; margin-bottom: 6px; }
+  .card h3 .arrow { color: var(--accent); font-weight: 400; }
+  .card p { font-size: 15px; color: var(--muted); margin-bottom: 14px; }
+  .tags { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tag {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px;
+    background: var(--accent-soft); color: var(--accent);
+    padding: 3px 10px; border-radius: 20px;
+  }
+
+  .questions { list-style: none; }
+  .questions li {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px 22px; margin-bottom: 12px; font-size: 16px; color: #33322f;
+  }
+  .questions li::before { content: "? "; color: var(--accent); font-weight: 700; }
+
+  .now-box {
+    background: var(--ink); color: #f5f4f0; border-radius: 14px; padding: 28px;
+  }
+  .now-box .label { color: #a3a099; border-bottom-color: #3a3935; }
+  .now-box p { font-size: 16px; color: #e8e6e1; margin-bottom: 8px; }
+  .now-box p:last-child { margin-bottom: 0; }
+
+  .contact p.lead { font-size: 18px; color: var(--muted); margin-bottom: 26px; }
+  .btn-row { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 28px; }
+  .btn {
+    display: inline-block; padding: 13px 28px; border-radius: 10px;
+    font-size: 16px; font-weight: 600; text-decoration: none;
+  }
+  .btn.primary { background: var(--ink); color: #fff; }
+  .btn.primary:hover { background: #000; }
+  .btn.ghost { border: 1.5px solid var(--line); color: var(--ink); background: var(--surface); }
+  .btn.ghost:hover { border-color: var(--ink); }
+  .social { display: flex; gap: 22px; }
+  .social a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 500; }
+  .social a:hover { color: var(--accent); }
+
+  footer {
+    margin-top: 20px; padding: 28px 0 44px;
+    border-top: 1px solid var(--line); color: #a3a099; font-size: 14px;
+    display: flex; justify-content: space-between;
+  }
+  footer a { color: #a3a099; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1>Shumail Zafar</h1>
+  <nav>
+    <a class="brand" href="#">
+      <span class="mark">SZ</span>
+      <span>Shumail Zafar</span>
+    </a>
+    <div class="links">
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <p>I am a computer science student. I want to build AI systems that actually work. Right now I am learning the foundations: Python, math, and how models reason.</p>
+  <header class="hero">
+    <span class="eyebrow">Personal site</span>
+    <h1>Shumail Zafar</h1>
+    <p class="lead">Computer science student working toward building AI systems that actually work.</p>
+  </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/Shumailz/python-practice">python-practice</a> <span class="note">: small Python programs I write every week to learn the language properly.</span></li>
-    <li><a href="https://github.com/Shumailz/programming-foundations">programming-foundations</a> <span class="note">: C++ coursework from my first year.</span></li>
-  </ul>
+  <section class="about">
+    <div class="label">About</div>
+    <p>I am learning the foundations first: Python, math, and how models reason. I build small systems to understand how things work, and I write down what I learn along the way.</p>
+    <p>My direction is clear: go deep on AI, build real things, and eventually do research that matters.</p>
+  </section>
 
-  <h2>Questions I am thinking about</h2>
-  <ul>
-    <li>How do language models actually reason, and where do they break?</li>
-    <li>What does it take to build agents that work in the real world?</li>
-  </ul>
+  <section id="projects">
+    <div class="label">Projects</div>
+    <div class="cards">
+      <a class="card" href="https://github.com/Shumailz/python-practice" target="_blank" rel="noopener">
+        <h3>python-practice <span class="arrow">&rarr;</span></h3>
+        <p>Small Python programs I write every week to learn the language properly, from basics to automation.</p>
+        <div class="tags"><span class="tag">Python</span></div>
+      </a>
+      <a class="card" href="https://github.com/Shumailz/programming-foundations" target="_blank" rel="noopener">
+        <h3>programming-foundations <span class="arrow">&rarr;</span></h3>
+        <p>C++ coursework from my first year: the fundamentals of programming, done carefully.</p>
+        <div class="tags"><span class="tag">C++</span></div>
+      </a>
+    </div>
+  </section>
 
-  <h2>Now</h2>
-  <ul>
-    <li>Learning Python deeply. Next: machine learning fundamentals.</li>
-  </ul>
+  <section>
+    <div class="label">Questions I am thinking about</div>
+    <ul class="questions">
+      <li>How do language models actually reason, and where do they break?</li>
+      <li>What does it take to build agents that work in the real world?</li>
+    </ul>
+  </section>
 
-  <h2>Contact</h2>
-  <p class="links">
-    <a href="mailto:zafarshumail129@gmail.com">Email</a>
-    <a href="https://github.com/Shumailz">GitHub</a>
-    <a href="https://x.com/shumail_z">X</a>
-  </p>
+  <section>
+    <div class="now-box">
+      <div class="label">Now</div>
+      <p>Learning Python deeply, one week at a time.</p>
+      <p>Next: machine learning fundamentals.</p>
+    </div>
+  </section>
 
-  <footer>&copy; 2026 Shumail Zafar</footer>
+  <section id="contact" class="contact">
+    <div class="label">Contact</div>
+    <p class="lead">The best way to reach me is email. I read everything.</p>
+    <div class="btn-row">
+      <a class="btn primary" href="mailto:zafarshumail129@gmail.com">Email me</a>
+    </div>
+    <div class="social">
+      <a href="https://github.com/shumilzafar" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://x.com/shumail_z" target="_blank" rel="noopener">X</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>&copy; 2026 Shumail Zafar</span>
+    <a href="#">Back to top</a>
+  </footer>
 
 </div>
 </body>
