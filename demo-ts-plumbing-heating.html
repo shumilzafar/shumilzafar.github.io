@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TS Plumbing &amp; Heating | Plumber in Oldbury, West Midlands</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #1c2b3a; background: #f4f7fa; line-height: 1.6; }
+  header { background: #0b3d66; color: #fff; padding: 28px 20px; text-align: center; }
+  header h1 { font-size: 30px; letter-spacing: 1px; }
+  header p { color: #ffd9a8; font-size: 16px; margin-top: 6px; }
+  .emergency { background: #f58220; color: #fff; text-align: center; padding: 14px 20px; font-size: 18px; }
+  .emergency strong { font-size: 20px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; }
+  .toggle-wrap { background: #fff; border: 2px dashed #0b3d66; border-radius: 10px; padding: 18px; margin-bottom: 28px; text-align: center; }
+  .toggle-instructions { font-size: 16px; margin-bottom: 12px; }
+  .toggle-btns { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .toggle-btn { border: 2px solid #0b3d66; background: #fff; color: #0b3d66; padding: 10px 20px; font-size: 15px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+  .toggle-btn.active { background: #0b3d66; color: #fff; }
+  .snippet-label { font-size: 14px; color: #7a4b00; background: #fff7e6; border: 1px solid #e8c47a; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+  .code-box { background: #1c2b3a; color: #ffd9a8; font-family: 'Courier New', monospace; font-size: 15px; padding: 18px; border-radius: 8px; white-space: pre-wrap; margin-bottom: 14px; }
+  .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 10px rgba(11,61,102,.08); margin-bottom: 24px; }
+  .card h2 { color: #0b3d66; font-size: 24px; margin-bottom: 10px; }
+  .card h3 { color: #0b3d66; font-size: 19px; margin: 22px 0 8px; }
+  .card p { margin-bottom: 12px; }
+  ul.services { list-style: none; margin: 8px 0 12px; }
+  ul.services li { padding: 7px 0 7px 28px; position: relative; }
+  ul.services li::before { content: "✓"; position: absolute; left: 4px; color: #f58220; font-weight: bold; }
+  form .row { margin-bottom: 14px; }
+  form label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 15px; }
+  form input, form textarea, form select { width: 100%; padding: 11px 12px; font-size: 16px; border: 1px solid #b9c6d2; border-radius: 6px; font-family: inherit; }
+  form input:focus, form textarea:focus, form select:focus { outline: 2px solid #f58220; border-color: #f58220; }
+  form button { background: #f58220; color: #fff; border: none; padding: 14px 28px; font-size: 17px; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; }
+  form button:hover { background: #d96e12; }
+  .form-note { font-size: 13px; color: #5a6b7c; margin-top: 10px; }
+  .success { display: none; background: #e8f7e9; border: 1px solid #7cc47f; color: #1f6b2a; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 16px; }
+  footer { background: #0b3d66; color: #cfe0ee; text-align: center; padding: 24px 20px; font-size: 14px; }
+  footer strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TS Plumbing &amp; Heating</h1>
+  <p>Local plumbers serving Oldbury and the West Midlands</p>
+</header>
+
+<div class="emergency">
+  Plumbing emergency? <strong>Call Tony on 07446 210 071</strong> without delay.
+</div>
+
+<div class="wrap">
+
+  <div class="toggle-wrap">
+    <p class="toggle-instructions">Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle-btns">
+      <button class="toggle-btn active" data-view="after">Cleaned-up version</button>
+      <button class="toggle-btn" data-view="before">Current version (problem)</button>
+    </div>
+  </div>
+
+  <div id="view-before" style="display:none;">
+    <div class="snippet-label"><strong>Illustrative snippet of the current problem</strong> (not your full site). This is what visitors see where the callback form should be:</div>
+    <div class="card">
+      <h2>Let us call you</h2>
+      <p>If you have an Emergency, please call Tony without delay on; 07446 210 071</p>
+      <div class="code-box">[contact-form-7 id="19" title="Let us call you..."]</div>
+      <p style="color:#a33;">Visitors see this line of code instead of a working form, so they cannot request a callback.</p>
+    </div>
+  </div>
+
+  <div id="view-after">
+    <div class="card">
+      <h2>Let us call you</h2>
+      <p>Leave your details below and Tony or one of the team will call you back as soon as possible.</p>
+      <form id="callbackForm">
+        <div class="row">
+          <label for="fName">Your name</label>
+          <input type="text" id="fName" name="name" placeholder="e.g. Sarah Jones">
+        </div>
+        <div class="row">
+          <label for="fPhone">Phone number</label>
+          <input type="tel" id="fPhone" name="phone" placeholder="e.g. 07123 456789">
+        </div>
+        <div class="row">
+          <label for="fWhen">Best time to call</label>
+          <select id="fWhen" name="besttime">
+            <option>As soon as possible</option>
+            <option>This morning</option>
+            <option>This afternoon</option>
+            <option>This evening</option>
+            <option>Tomorrow</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="fMsg">What is the problem?</label>
+          <textarea id="fMsg" name="message" rows="4" placeholder="Briefly describe the plumbing or heating issue..."></textarea>
+        </div>
+        <button type="submit">Request a callback</button>
+        <p class="form-note">Prefer to talk now? Call Tony directly on 07446 210 071.</p>
+      </form>
+      <div class="success" id="formSuccess">Thanks, your request has been sent. Tony or one of the team will call you back shortly.</div>
+    </div>
+
+    <div class="card">
+      <h2>Our services</h2>
+      <ul class="services">
+        <li>Boiler servicing and repairs</li>
+        <li>Central heating installations</li>
+        <li>Emergency plumbing callouts</li>
+        <li>Bathroom and kitchen plumbing</li>
+        <li>Leaks, blockages and general repairs</li>
+      </ul>
+      <h3>Why choose TS Plumbing &amp; Heating</h3>
+      <p>A local team based in Oldbury, covering the wider West Midlands. Straightforward advice, honest pricing and tidy workmanship on every job.</p>
+      <p>Call for a free quote on 07446 210 071 or use the callback form above.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>TS Plumbing &amp; Heating</strong><br>
+  Oldbury, West Midlands &nbsp;|&nbsp; 07446 210 071 &nbsp;|&nbsp; info@tsplumbing-heating.co.uk
+</footer>
+
+<script>
+document.querySelectorAll('.toggle-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.toggle-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var view = btn.getAttribute('data-view');
+    document.getElementById('view-after').style.display = view === 'after' ? 'block' : 'none';
+    document.getElementById('view-before').style.display = view === 'before' ? 'block' : 'none';
+  });
+});
+document.getElementById('callbackForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = document.getElementById('fName').value.trim();
+  var phone = document.getElementById('fPhone').value.trim();
+  if (!name || !phone) {
+    alert('Please add your name and phone number so we can call you back.');
+    return;
+  }
+  document.getElementById('formSuccess').style.display = 'block';
+  this.reset();
+  window.scrollTo(0, 0);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaskane | Cafe and Holiday Cottages, Skinningrove</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; color: #3b3129; background: #faf6ef; line-height: 1.65; }
+  header { background: linear-gradient(135deg, #3e5c4b 0%, #2c4237 100%); color: #fff; padding: 40px 20px; text-align: center; }
+  header h1 { font-size: 42px; letter-spacing: 3px; }
+  header p { color: #e8dcc3; margin-top: 8px; font-size: 16px; font-style: italic; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; }
+  .toggle-wrap { background: #fff; border: 2px dashed #3e5c4b; border-radius: 10px; padding: 18px; margin-bottom: 28px; text-align: center; }
+  .toggle-instructions { font-size: 16px; margin-bottom: 12px; }
+  .toggle-btns { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .toggle-btn { border: 2px solid #3e5c4b; background: #fff; color: #3e5c4b; padding: 10px 20px; font-size: 15px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+  .toggle-btn.active { background: #3e5c4b; color: #fff; }
+  .snippet-label { font-size: 14px; color: #7a4b00; background: #fff7e6; border: 1px solid #e8c47a; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+  .code-box { background: #2c2620; color: #d9c9a8; font-family: 'Courier New', monospace; font-size: 13px; padding: 18px; border-radius: 8px; white-space: pre-wrap; word-break: break-all; margin-bottom: 14px; max-height: 260px; overflow: auto; }
+  .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 10px rgba(62,92,75,.10); margin-bottom: 24px; border-top: 5px solid #b98a4e; }
+  .card h2 { color: #3e5c4b; font-size: 26px; margin-bottom: 10px; }
+  .card p { margin-bottom: 12px; }
+  .two-col { display: flex; flex-wrap: wrap; gap: 18px; margin: 18px 0; }
+  .two-col .panel { flex: 1 1 280px; background: #f4ecdc; border-radius: 8px; padding: 18px; }
+  .two-col .panel h3 { color: #3e5c4b; margin-bottom: 6px; font-size: 19px; }
+  form .row { margin-bottom: 14px; }
+  form label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 15px; }
+  form input, form textarea, form select { width: 100%; padding: 11px 12px; font-size: 16px; border: 1px solid #c9bfa9; border-radius: 6px; font-family: inherit; background: #fffdf8; }
+  form input:focus, form textarea:focus, form select:focus { outline: 2px solid #b98a4e; border-color: #b98a4e; }
+  form button { background: #3e5c4b; color: #fff; border: none; padding: 14px 28px; font-size: 17px; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; }
+  form button:hover { background: #2c4237; }
+  .success { display: none; background: #e8f7e9; border: 1px solid #7cc47f; color: #1f6b2a; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 16px; }
+  footer { background: #2c4237; color: #d8cdb4; text-align: center; padding: 24px 20px; font-size: 14px; }
+  footer strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Kaskane</h1>
+  <p>Cafe and holiday cottages in Skinningrove, near Saltburn-by-the-Sea</p>
+</header>
+
+<div class="wrap">
+
+  <div class="toggle-wrap">
+    <p class="toggle-instructions">Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle-btns">
+      <button class="toggle-btn active" data-view="after">Cleaned-up version</button>
+      <button class="toggle-btn" data-view="before">Current version (problem)</button>
+    </div>
+  </div>
+
+  <div id="view-before" style="display:none;">
+    <div class="snippet-label"><strong>Illustrative snippet of the current problem</strong> (not your full site). This is the kind of raw code visitors see across the whole Contact Us page:</div>
+    <div class="code-box">[x_section parallax="true" bg_image="http://www.garthys.com/kaskane/wp-content/uploads/2015/09/holiday1.jpg" ...]
+[x_row ...][x_column ...]
+...
+[x_text][contact-form-7 id="114" title="Contact form 1"][/x_text]</div>
+    <div class="card">
+      <p style="color:#a33;">The page shows page-builder code and a broken form shortcode instead of contact details. Visitors cannot see how to reach the cafe or book a cottage.</p>
+    </div>
+  </div>
+
+  <div id="view-after">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>We would love to hear from you. Whether it is a table at the cafe or a stay in one of our cottages, get in touch using the form below.</p>
+      <div class="two-col">
+        <div class="panel">
+          <h3>The Cafe</h3>
+          <p>Homemade food, proper coffee and a warm welcome in the heart of Skinningrove.</p>
+          <p>Email: cafe@kaskane.co.uk</p>
+        </div>
+        <div class="panel">
+          <h3>Holiday Cottages</h3>
+          <p>Cosy cottages a short stroll from the Cleveland coast, ideal for walkers and families.</p>
+          <p>Use the form below and choose "Cottage enquiry".</p>
+        </div>
+      </div>
+      <form id="contactForm">
+        <div class="row">
+          <label for="fName">Your name</label>
+          <input type="text" id="fName" name="name" placeholder="e.g. Laura Green">
+        </div>
+        <div class="row">
+          <label for="fEmail">Email address</label>
+          <input type="email" id="fEmail" name="email" placeholder="e.g. laura@example.co.uk">
+        </div>
+        <div class="row">
+          <label for="fSubject">What is this about?</label>
+          <select id="fSubject" name="subject">
+            <option>Cafe table booking</option>
+            <option>Cottage enquiry</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="row">
+          <label for="fMsg">Your message</label>
+          <textarea id="fMsg" name="message" rows="5" placeholder="Tell us dates, party size or anything else helpful..."></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <div class="success" id="formSuccess">Thanks, your message has been sent. We will get back to you as soon as we can.</div>
+    </div>
+
+    <div class="card">
+      <h2>Finding Us</h2>
+      <p>Kaskane is in Skinningrove, near Saltburn-by-the-Sea on the North Yorkshire coast, close to the Cleveland Way walking route.</p>
+      <p>For the quickest reply, email cafe@kaskane.co.uk directly.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>Kaskane</strong><br>
+  Skinningrove, near Saltburn-by-the-Sea &nbsp;|&nbsp; cafe@kaskane.co.uk
+</footer>
+
+<script>
+document.querySelectorAll('.toggle-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.toggle-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var view = btn.getAttribute('data-view');
+    document.getElementById('view-after').style.display = view === 'after' ? 'block' : 'none';
+    document.getElementById('view-before').style.display = view === 'before' ? 'block' : 'none';
+  });
+});
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = document.getElementById('fName').value.trim();
+  var email = document.getElementById('fEmail').value.trim();
+  var msg = document.getElementById('fMsg').value.trim();
+  if (!name || !email || !msg) {
+    alert('Please fill in your name, email and message.');
+    return;
+  }
+  document.getElementById('formSuccess').style.display = 'block';
+  this.reset();
+  window.scrollTo(0, 0);
+});
+</script>
+
+</body>
+</html>

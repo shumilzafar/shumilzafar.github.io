@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Launceston Plumbing &amp; Gas | Plumbers &amp; Gas Fitters Launceston</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color:#2b2b2b; background:#f6f4ef; line-height:1.6; }
+  header { background:#0f5257; color:#fff; padding:18px 5%; display:flex; justify-content:space-between; align-items:center; }
+  header .logo { font-size:1.3em; font-weight:800; }
+  header .logo span { color:#f2a950; }
+  header .cta { background:#f2a950; color:#0f5257; text-decoration:none; font-weight:700; padding:10px 22px; border-radius:6px; }
+  .hero { background:linear-gradient(135deg,#0f5257,#1b7f79); color:#fff; padding:64px 5%; text-align:center; }
+  .hero h1 { font-size:2.3em; margin-bottom:12px; }
+  .hero p { font-size:1.12em; max-width:620px; margin:0 auto 24px; opacity:.93; }
+  .hero a { background:#f2a950; color:#0f5257; text-decoration:none; font-weight:800; padding:14px 34px; border-radius:6px; display:inline-block; }
+  .wrap { max-width:1020px; margin:0 auto; padding:0 5%; }
+  .demo-bar { background:#fff; border:2px dashed #c97b1a; border-radius:10px; padding:22px 26px; margin:34px 0; }
+  .demo-bar p { margin-bottom:12px; }
+  .toggle { display:flex; gap:10px; flex-wrap:wrap; }
+  .toggle button { border:2px solid #0f5257; background:#fff; color:#0f5257; font-weight:700; padding:10px 20px; border-radius:6px; cursor:pointer; font-size:.95em; }
+  .toggle button.on { background:#0f5257; color:#fff; }
+  .panel { margin-top:16px; }
+  .label { font-size:.8em; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .label.before { color:#b3261e; } .label.after { color:#1b7a3d; }
+  .before-box { background:#fdf0ef; border:1px solid #e5a09b; border-radius:8px; padding:16px 18px; font-size:.93em; color:#5c201b; }
+  .urlbar { background:#fff; border:1px solid #d8c9c9; border-radius:8px; padding:10px 14px; font-family:Consolas,monospace; font-size:.88em; margin-bottom:12px; }
+  .urlbar .notsecure { color:#b3261e; font-weight:700; }
+  .urlbar .secure { color:#1b7a3d; font-weight:700; }
+  .before-box h3 { margin:10px 0 4px; }
+  .before-box .clients { background:#fff; border:1px dashed #e5a09b; border-radius:6px; padding:10px 14px; margin-top:8px; }
+  .before-box .typo { color:#b3261e; font-weight:700; }
+  .after-box { background:#f0f8f1; border:1px solid #9ed3a8; border-radius:8px; padding:16px 18px; font-size:.93em; }
+  .after-box h3 { margin:10px 0 4px; color:#0f5257; }
+  .after-box .clients { background:#fff; border:1px solid #9ed3a8; border-radius:6px; padding:10px 14px; margin-top:8px; }
+  section.block { padding:44px 0; }
+  section.block h2 { color:#0f5257; margin-bottom:10px; font-size:1.7em; }
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:18px; }
+  .services .card { background:#fff; border-radius:10px; padding:24px; box-shadow:0 2px 8px rgba(0,0,0,.06); border-top:4px solid #f2a950; }
+  .services .card h3 { color:#0f5257; margin-bottom:8px; }
+  .trust { background:#0f5257; color:#fff; text-align:center; padding:26px 5%; }
+  .trust span { margin:0 18px; font-weight:600; }
+  .contact { background:#fff; border-radius:12px; padding:36px; margin:44px 0; box-shadow:0 2px 12px rgba(0,0,0,.07); text-align:center; }
+  .contact h2 { color:#0f5257; margin-bottom:10px; }
+  .contact form { display:grid; gap:12px; max-width:440px; margin:20px auto 0; text-align:left; }
+  .contact input, .contact textarea { padding:12px; border:1px solid #d3cfc0; border-radius:6px; font-size:1em; width:100%; }
+  .contact button { background:#0f5257; color:#fff; border:none; padding:14px; border-radius:6px; font-weight:700; font-size:1em; cursor:pointer; }
+  footer { background:#0a3a3d; color:#cfe3df; padding:30px 5%; font-size:.9em; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  .concept { text-align:center; font-size:.78em; color:#7fa5a1; padding:12px; background:#072a2c; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">LAUNCESTON <span>PLUMBING &amp; GAS</span></div>
+  <a class="cta" href="#contact">Get a Free Quote</a>
+</header>
+
+<div class="hero">
+  <h1>The plumbers and gas fitters Launceston can rely on</h1>
+  <p>Plumbing and gas fitting for Launceston homes and businesses. One call sorts it.</p>
+  <a href="#contact">Call for a Free Quote</a>
+</div>
+
+<div class="wrap">
+  <div class="demo-bar">
+    <p><strong>Demo:</strong> Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle">
+      <button class="on" onclick="showPanel('before', this)">Current page (with the flaw)</button>
+      <button onclick="showPanel('after', this)">Cleaned-up version</button>
+    </div>
+    <div class="panel" id="before-panel">
+      <div class="label before">Illustrative snippet of what visitors see on your homepage right now</div>
+      <div class="before-box">
+        <div class="urlbar"><span class="notsecure">&#9888; Not secure</span> &nbsp;http://launcestonplumbing.com</div>
+        <h3>The plumbers and gas fitters Launceston can rely on</h3>
+        <h3>The plumbers and gas fitters Launceston can rely on <span style="font-size:.7em;">&#8592; same heading, repeated twice</span></h3>
+        <div class="clients"><strong>Our clients include:</strong> &hellip; <span class="typo">Macquaire House</span> &hellip; <span style="font-size:.85em;">&#8592; typo</span></div>
+      </div>
+      <p style="margin-top:10px; font-size:.92em;">The site loads over unsecured http://, the main heading is printed twice, and a client's name is misspelled in the client list.</p>
+    </div>
+    <div class="panel" id="after-panel" style="display:none;">
+      <div class="label after">The same page, fixed</div>
+      <div class="after-box">
+        <div class="urlbar"><span class="secure">&#128274; Secure</span> &nbsp;https://launcestonplumbing.com</div>
+        <h3>The plumbers and gas fitters Launceston can rely on</h3>
+        <div class="clients"><strong>Our clients include:</strong> &hellip; Macquarie House &hellip;</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Our Services</h2>
+    <p>Plumbing and gas work across Launceston, done properly.</p>
+    <div class="services">
+      <div class="card"><h3>General Plumbing</h3><p>Maintenance and repairs for homes and businesses.</p></div>
+      <div class="card"><h3>Gas Fitting</h3><p>Licensed gas fitting, servicing and safety checks.</p></div>
+      <div class="card"><h3>Blocked Drains</h3><p>Drain clearing and repairs, fast.</p></div>
+      <div class="card"><h3>Hot Water</h3><p>Hot water repairs and replacements.</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="trust">
+  <span>Locally owned</span><span>&#10003; Launceston, Tasmania</span><span>&#10003; Prompt, reliable service</span>
+</div>
+
+<div class="wrap">
+  <div class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Call for a free quote, or send a message and we will get back to you promptly.</p>
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Your name">
+      <input type="tel" placeholder="Phone number">
+      <textarea rows="4" placeholder="Tell us about the job"></textarea>
+      <button type="submit">Request a Callback</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff;">Launceston Plumbing &amp; Gas</strong><br>Launceston, Tasmania</div>
+    <div>Plumbing &middot; Gas fitting &middot; Blocked drains &middot; Hot water</div>
+  </div>
+</footer>
+<div class="concept">Concept mockup prepared for Launceston Plumbing &amp; Gas, not the live site.</div>
+
+<script>
+function showPanel(which, btn){
+  document.querySelectorAll('.toggle button').forEach(function(b){ b.classList.remove('on'); });
+  btn.classList.add('on');
+  document.getElementById('before-panel').style.display = (which === 'before') ? 'block' : 'none';
+  document.getElementById('after-panel').style.display = (which === 'after') ? 'block' : 'none';
+}
+</script>
+</body>
+</html>

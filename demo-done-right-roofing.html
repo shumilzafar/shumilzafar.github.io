@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Done Right Roofing &amp; Guttering</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color:#2b2b2b; background:#f4f2ee; line-height:1.6; }
+  header { background:#263238; color:#fff; padding:18px 5%; display:flex; justify-content:space-between; align-items:center; }
+  header .logo { font-size:1.35em; font-weight:800; }
+  header .logo span { color:#ff8f3d; }
+  header .cta { background:#ff8f3d; color:#263238; text-decoration:none; font-weight:700; padding:10px 22px; border-radius:6px; }
+  .hero { background:linear-gradient(135deg,#263238,#455a64); color:#fff; padding:56px 5%; text-align:center; }
+  .hero h1 { font-size:2.3em; margin-bottom:10px; }
+  .hero p { max-width:680px; margin:0 auto; opacity:.92; }
+  .wrap { max-width:1020px; margin:0 auto; padding:0 5%; }
+  .demo-bar { background:#fff; border:2px dashed #c97b1a; border-radius:10px; padding:22px 26px; margin:34px 0; }
+  .demo-bar p { margin-bottom:12px; }
+  .toggle { display:flex; gap:10px; flex-wrap:wrap; }
+  .toggle button { border:2px solid #263238; background:#fff; color:#263238; font-weight:700; padding:10px 20px; border-radius:6px; cursor:pointer; font-size:.95em; }
+  .toggle button.on { background:#263238; color:#fff; }
+  .panel { margin-top:16px; }
+  .label { font-size:.8em; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .label.before { color:#b3261e; } .label.after { color:#1b7a3d; }
+  .before-box { background:#fdf0ef; border:1px solid #e5a09b; border-radius:8px; padding:16px 18px; font-size:.95em; color:#5c201b; }
+  .before-box .stray { background:#ffe1de; padding:10px 12px; border-radius:6px; margin-bottom:12px; }
+  .before-box .dup { background:#fff; border:1px dashed #e5a09b; border-radius:6px; padding:10px 12px; margin-bottom:8px; font-size:.88em; }
+  .after-box { background:#f0f8f1; border:1px solid #9ed3a8; border-radius:8px; padding:18px; }
+  .after-box .clean { background:#fff; border-radius:6px; padding:14px 16px; margin-bottom:10px; }
+  .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin:40px 0; }
+  @media (max-width:700px){ .contact-grid{ grid-template-columns:1fr; } }
+  .card { background:#fff; border-radius:12px; padding:30px; box-shadow:0 2px 10px rgba(0,0,0,.06); }
+  .card h2 { color:#263238; margin-bottom:12px; }
+  .info p { margin-bottom:10px; }
+  form { display:grid; gap:12px; margin-top:16px; }
+  form input, form textarea { padding:12px; border:1px solid #cfc9bd; border-radius:6px; font-size:1em; width:100%; }
+  form button { background:#ff8f3d; color:#263238; border:none; padding:14px; border-radius:6px; font-weight:800; font-size:1em; cursor:pointer; }
+  .services-strip { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:10px 0 40px; }
+  .services-strip .s { background:#263238; color:#fff; border-radius:10px; padding:20px; }
+  .services-strip .s h3 { color:#ff8f3d; margin-bottom:6px; font-size:1.05em; }
+  footer { background:#1c262b; color:#cfd8dc; padding:34px 5%; font-size:.92em; }
+  footer .wrap { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:18px; }
+  footer strong { color:#fff; }
+  .concept { text-align:center; font-size:.78em; color:#7d8f98; padding:12px; background:#131a1d; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DONE RIGHT <span>ROOFING</span></div>
+  <a class="cta" href="#contact">Get a Free Quote</a>
+</header>
+
+<div class="hero">
+  <h1>Contact Done Right Roofing &amp; Guttering</h1>
+  <p>Done Right Roofing &amp; Guttering provides expert roofing and guttering services across Adelaide. With 30+ years of experience, we're known for quality workmanship, honest advice, and reliable service you can trust.</p>
+</div>
+
+<div class="wrap">
+  <div class="demo-bar">
+    <p><strong>Demo:</strong> Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle">
+      <button class="on" onclick="showPanel('before', this)">Current page (with the flaw)</button>
+      <button onclick="showPanel('after', this)">Cleaned-up version</button>
+    </div>
+    <div class="panel" id="before-panel">
+      <div class="label before">Illustrative snippet of what visitors see on your contact page right now</div>
+      <div class="before-box">
+        <div class="stray">"We specialise in roof repairs, re-roofing, gutter replacements, roof inspections, and emergency roofing services. <strong>information</strong>"<br><span style="font-size:.85em;">&#8592; leftover stray word at the end of the sentence</span></div>
+        <div class="dup"><strong>Footer block</strong>, phone, address, links</div>
+        <div class="dup"><strong>Footer block</strong>, phone, address, links &nbsp;<em>(same block, repeated)</em></div>
+        <div class="dup"><strong>Footer block</strong>, phone, address, links &nbsp;<em>(same block, repeated again)</em></div>
+      </div>
+      <p style="margin-top:10px; font-size:.92em;">The stray word "information" hangs off the end of a sentence, and the whole footer/contact block is duplicated 3 to 4 times down the page.</p>
+    </div>
+    <div class="panel" id="after-panel" style="display:none;">
+      <div class="label after">The same page, fixed</div>
+      <div class="after-box">
+        <div class="clean">"We specialise in roof repairs, re-roofing, gutter replacements, roof inspections, and emergency roofing services."</div>
+        <div class="clean"><strong>Footer</strong>, phone, address, links &nbsp;<em>(appears once)</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-grid" id="contact">
+    <div class="card info">
+      <h2>Get in Touch</h2>
+      <p><strong>Done Right Roofing &amp; Guttering</strong><br>Seaton, Adelaide, South Australia</p>
+      <p>Call for a free quote on roof repairs, re-roofing, gutter replacements, roof inspections, and emergency roofing services.</p>
+      <p style="color:#5c6b73;">Servicing Adelaide and surrounding suburbs.</p>
+    </div>
+    <div class="card">
+      <h2>Request a Callback</h2>
+      <form onsubmit="return false;">
+        <input type="text" placeholder="Your name">
+        <input type="tel" placeholder="Phone number">
+        <input type="text" placeholder="Suburb">
+        <textarea rows="4" placeholder="Tell us about the roofing job"></textarea>
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="services-strip">
+    <div class="s"><h3>Roof Repairs</h3><p>Leaks, broken tiles and storm damage fixed properly.</p></div>
+    <div class="s"><h3>Re-Roofing</h3><p>Full roof replacements built to last.</p></div>
+    <div class="s"><h3>Gutters</h3><p>Gutter replacements and repairs.</p></div>
+    <div class="s"><h3>Inspections</h3><p>Roof inspections and honest advice.</p></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Done Right Roofing &amp; Guttering</strong><br>Seaton, Adelaide SA</div>
+    <div><strong>Services</strong><br>Roof repairs &middot; Re-roofing &middot; Gutters &middot; Inspections</div>
+    <div><strong>Hours</strong><br>Call for a free quote</div>
+  </div>
+</footer>
+<div class="concept">Concept mockup prepared for Done Right Roofing &amp; Guttering, not the live site.</div>
+
+<script>
+function showPanel(which, btn){
+  document.querySelectorAll('.toggle button').forEach(function(b){ b.classList.remove('on'); });
+  btn.classList.add('on');
+  document.getElementById('before-panel').style.display = (which === 'before') ? 'block' : 'none';
+  document.getElementById('after-panel').style.display = (which === 'after') ? 'block' : 'none';
+}
+</script>
+</body>
+</html>

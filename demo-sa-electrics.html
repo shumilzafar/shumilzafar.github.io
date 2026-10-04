@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S A Electrics | Electrician in Telford, Shropshire</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; color: #2a3340; background: #f5f7fb; line-height: 1.65; }
+  header { background: #1a2a4a; color: #fff; padding: 30px 20px; text-align: center; }
+  header h1 { font-size: 30px; }
+  header h1 span { color: #f5b942; }
+  header p { color: #c9d4e6; margin-top: 6px; font-size: 15px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; }
+  .toggle-wrap { background: #fff; border: 2px dashed #1a2a4a; border-radius: 10px; padding: 18px; margin-bottom: 28px; text-align: center; }
+  .toggle-instructions { font-size: 16px; margin-bottom: 12px; }
+  .toggle-btns { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .toggle-btn { border: 2px solid #1a2a4a; background: #fff; color: #1a2a4a; padding: 10px 20px; font-size: 15px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+  .toggle-btn.active { background: #1a2a4a; color: #f5b942; }
+  .snippet-label { font-size: 14px; color: #7a4b00; background: #fff7e6; border: 1px solid #e8c47a; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+  .code-box { background: #1a2a4a; color: #f5b942; font-family: 'Courier New', monospace; font-size: 15px; padding: 18px; border-radius: 8px; white-space: pre-wrap; margin-bottom: 14px; }
+  .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 10px rgba(26,42,74,.08); margin-bottom: 24px; }
+  .card h2 { color: #1a2a4a; font-size: 24px; margin-bottom: 10px; }
+  .card h2 .bolt { color: #f5b942; }
+  .card p { margin-bottom: 12px; }
+  .promise { background: #fff8e8; border-left: 5px solid #f5b942; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 16px 0; font-size: 16px; }
+  ul.services { list-style: none; margin: 8px 0 12px; columns: 2; }
+  ul.services li { padding: 6px 0 6px 26px; position: relative; break-inside: avoid; }
+  ul.services li::before { content: "\26A1"; position: absolute; left: 2px; color: #f5b942; }
+  form .row { margin-bottom: 14px; }
+  form label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 15px; }
+  form input, form textarea, form select { width: 100%; padding: 11px 12px; font-size: 16px; border: 1px solid #b6c1d4; border-radius: 6px; font-family: inherit; }
+  form input:focus, form textarea:focus, form select:focus { outline: 2px solid #f5b942; border-color: #f5b942; }
+  form button { background: #1a2a4a; color: #f5b942; border: none; padding: 14px 28px; font-size: 17px; font-weight: bold; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; }
+  form button:hover { background: #243a63; }
+  .success { display: none; background: #e8f7e9; border: 1px solid #7cc47f; color: #1f6b2a; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 16px; }
+  footer { background: #1a2a4a; color: #aeb9cf; text-align: center; padding: 24px 20px; font-size: 14px; }
+  footer strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>S A <span>Electrics</span></h1>
+  <p>Local electrician in Telford, Shropshire</p>
+</header>
+
+<div class="wrap">
+
+  <div class="toggle-wrap">
+    <p class="toggle-instructions">Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle-btns">
+      <button class="toggle-btn active" data-view="after">Cleaned-up version</button>
+      <button class="toggle-btn" data-view="before">Current version (problem)</button>
+    </div>
+  </div>
+
+  <div id="view-before" style="display:none;">
+    <div class="snippet-label"><strong>Illustrative snippet of the current problem</strong> (not your full site). This is what visitors see where the appointment form should be:</div>
+    <div class="card">
+      <h2>Appointment Form</h2>
+      <div class="code-box">[contact-form-7 404 "Not Found"]</div>
+      <p style="color:#a33;">The form was deleted, so visitors see this error text instead of a way to book. No one can request an appointment.</p>
+    </div>
+  </div>
+
+  <div id="view-after">
+    <div class="card">
+      <h2><span class="bolt">&#9889;</span> Appointment Form</h2>
+      <p>Book an appointment with Stewart using the form below.</p>
+      <form id="apptForm">
+        <div class="row">
+          <label for="fName">Your name</label>
+          <input type="text" id="fName" name="name" placeholder="e.g. James Brown">
+        </div>
+        <div class="row">
+          <label for="fPhone">Phone number</label>
+          <input type="tel" id="fPhone" name="phone" placeholder="e.g. 07123 456789">
+        </div>
+        <div class="row">
+          <label for="fEmail">Email address</label>
+          <input type="email" id="fEmail" name="email" placeholder="e.g. james@example.co.uk">
+        </div>
+        <div class="row">
+          <label for="fDate">Preferred date</label>
+          <input type="date" id="fDate" name="date">
+        </div>
+        <div class="row">
+          <label for="fMsg">Details of the work</label>
+          <textarea id="fMsg" name="message" rows="4" placeholder="Briefly describe the electrical work needed..."></textarea>
+        </div>
+        <button type="submit">Request appointment</button>
+      </form>
+      <div class="success" id="formSuccess">Thanks, your appointment request has been sent. Stewart will confirm a time with you soon.</div>
+    </div>
+
+    <div class="card">
+      <h2><span class="bolt">&#9889;</span> About S A Electrics</h2>
+      <p>S A Electrics is a one-man operation run by Stewart, covering Telford and the surrounding areas of Shropshire.</p>
+      <div class="promise">I aim to email all quotations within 24 hours.</div>
+      <ul class="services">
+        <li>Consumer unit upgrades</li>
+        <li>Additional sockets and lighting</li>
+        <li>Fault finding and repairs</li>
+        <li>Landlord safety checks</li>
+        <li>Outdoor and garden electrics</li>
+        <li>Smoke alarm installation</li>
+      </ul>
+      <p>Write to enquire@saelectrics.co.uk or use the appointment form above.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>S A Electrics</strong><br>
+  Telford, Shropshire &nbsp;|&nbsp; enquire@saelectrics.co.uk
+</footer>
+
+<script>
+document.querySelectorAll('.toggle-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.toggle-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var view = btn.getAttribute('data-view');
+    document.getElementById('view-after').style.display = view === 'after' ? 'block' : 'none';
+    document.getElementById('view-before').style.display = view === 'before' ? 'block' : 'none';
+  });
+});
+document.getElementById('apptForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = document.getElementById('fName').value.trim();
+  var phone = document.getElementById('fPhone').value.trim();
+  if (!name || !phone) {
+    alert('Please add your name and phone number so Stewart can confirm your appointment.');
+    return;
+  }
+  document.getElementById('formSuccess').style.display = 'block';
+  this.reset();
+  window.scrollTo(0, 0);
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residential House Cleaning | Temecula House Cleaner</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color:#333; background:#f4fafb; line-height:1.6; }
+  header { background:#0e7c86; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  header .brand { font-size:1.35rem; font-weight:bold; }
+  header .brand span { color:#bff0ee; }
+  header .tag { font-size:0.9rem; color:#d8f3f1; }
+  nav { background:#0a5f66; padding:10px 24px; }
+  nav a { color:#d8f3f1; text-decoration:none; margin-right:22px; font-size:0.95rem; }
+  nav a:hover { color:#fff; text-decoration:underline; }
+  .hero { background:linear-gradient(rgba(10,95,102,.55), rgba(10,95,102,.55)), #159aa3; color:#fff; text-align:center; padding:56px 20px; }
+  .hero h1 { font-size:2.3rem; margin-bottom:10px; }
+  .hero p { max-width:640px; margin:0 auto; color:#eafaf9; font-size:1.08rem; }
+  .wrap { max-width:1020px; margin:0 auto; padding:30px 20px; }
+  .toggle-box { background:#fff; border:2px solid #0e7c86; border-radius:10px; padding:22px; margin-bottom:34px; }
+  .toggle-box .instr { font-size:1.02rem; margin-bottom:14px; }
+  .toggle-btns { display:flex; gap:12px; margin-bottom:18px; flex-wrap:wrap; }
+  .toggle-btns button { padding:10px 22px; font-size:1rem; border-radius:6px; border:2px solid #0e7c86; cursor:pointer; background:#fff; color:#0e7c86; font-weight:bold; }
+  .toggle-btns button.active { background:#0e7c86; color:#fff; }
+  .pane { display:none; }
+  .pane.active { display:block; }
+  .before-pane { border:1px dashed #b00020; background:#fff8f8; border-radius:8px; padding:18px; font-size:0.95rem; }
+  .before-pane .label { display:inline-block; background:#b00020; color:#fff; font-size:0.8rem; padding:3px 10px; border-radius:4px; margin-bottom:10px; }
+  .flaw { background:#fff; border:1px solid #e0caca; padding:12px 14px; border-radius:6px; margin:10px 0; }
+  .flaw .strike { color:#b00020; font-weight:bold; }
+  .flaw ul { margin:8px 0 0 20px; color:#777; font-style:italic; }
+  .trust { background:#fff; border-radius:10px; padding:28px; box-shadow:0 2px 10px rgba(0,0,0,.07); }
+  .trust h2 { color:#0e7c86; margin-bottom:6px; font-size:1.6rem; }
+  .trust p.lead { color:#555; margin-bottom:18px; }
+  .check { display:flex; gap:12px; padding:12px 0; border-bottom:1px solid #eef3f3; align-items:flex-start; }
+  .check:last-child { border-bottom:none; }
+  .check .tick { color:#0e7c86; font-size:1.3rem; font-weight:bold; }
+  .check strong { display:block; color:#0e7c86; }
+  .check span.d { color:#555; font-size:0.95rem; }
+  .plans { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:28px; }
+  @media (max-width:750px){ .plans{grid-template-columns:1fr;} }
+  .plan { background:#fff; border-radius:10px; padding:22px; box-shadow:0 2px 10px rgba(0,0,0,.07); border-top:4px solid #0e7c86; }
+  .plan h3 { color:#0e7c86; margin-bottom:8px; }
+  .plan p { color:#555; font-size:0.95rem; }
+  .plan .call { margin-top:10px; font-weight:bold; color:#0e7c86; }
+  footer { background:#0a5f66; color:#c9e8e6; text-align:center; padding:24px 20px; margin-top:40px; font-size:0.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Temecula <span>House Cleaner</span></div>
+  <div class="tag">Residential cleaning in Temecula &amp; Riverside County</div>
+</header>
+<nav>
+  <a href="#">Home</a><a href="#">Residential Cleaning</a><a href="#">Recurring Services</a><a href="#">About</a><a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Residential House Cleaning in Temecula</h1>
+  <p>One-time deep cleans and recurring visits that keep your home fresh, on your schedule.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="toggle-box">
+    <p class="instr"><strong>Tap the buttons below to flip between your current page and the cleaned-up version:</strong></p>
+    <div class="toggle-btns">
+      <button id="btnBefore" onclick="showPane('before')">Before (your current page)</button>
+      <button id="btnAfter" class="active" onclick="showPane('after')">After (cleaned up)</button>
+    </div>
+
+    <div id="paneBefore" class="pane before-pane">
+      <span class="label">BEFORE</span>
+      <p>A small sample of your "Why Trust Temecula House Cleaner With Your Recurring Services?" checklist, live on your site right now:</p>
+      <div class="flaw">
+        <span class="strike">The same placeholder line repeats about eight times, with a misspelling:</span>
+        <ul>
+          <li>Lorem ipsum dolor sit amet, consectet adipiscing elit...</li>
+          <li>Lorem ipsum dolor sit amet, consectet adipiscing elit...</li>
+          <li>Lorem ipsum dolor sit amet, consectet adipiscing elit...</li>
+          <li style="list-style:none; color:#b00020;">(repeats again and again)</li>
+        </ul>
+        <p style="margin-top:8px; color:#555;">Note: "consectet" is misspelled (should be "consectetur"), which makes the placeholder even more visible.</p>
+      </div>
+      <p style="margin-top:8px; color:#555;">(This is only a sample. Your full page was not copied here.)</p>
+    </div>
+
+    <div id="paneAfter" class="pane after-pane active">
+      <div class="trust">
+        <h2>Why Trust Temecula House Cleaner With Your Recurring Services?</h2>
+        <p class="lead">A clean home you can count on, visit after visit.</p>
+
+        <div class="check">
+          <div class="tick">&#10003;</div>
+          <div><strong>Same cleaner every visit</strong><span class="d">You get to know the person cleaning your home, and they learn exactly how you like it.</span></div>
+        </div>
+        <div class="check">
+          <div class="tick">&#10003;</div>
+          <div><strong>Consistent checklist, every time</strong><span class="d">Kitchens, bathrooms, dusting, floors. Done the same thorough way, on schedule.</span></div>
+        </div>
+        <div class="check">
+          <div class="tick">&#10003;</div>
+          <div><strong>Flexible scheduling</strong><span class="d">Weekly, bi-weekly, or monthly. Easy to pause or reschedule when life happens.</span></div>
+        </div>
+        <div class="check">
+          <div class="tick">&#10003;</div>
+          <div><strong>Supplies available</strong><span class="d">We can bring our own professional products, or use yours. Your choice.</span></div>
+        </div>
+        <div class="check">
+          <div class="tick">&#10003;</div>
+          <div><strong>Local and accountable</strong><span class="d">Based right here in Temecula, serving homes across Riverside County.</span></div>
+        </div>
+        <div class="check">
+          <div class="tick">&#10003;</div>
+          <div><strong>Free, no-pressure quotes</strong><span class="d">Tell us about your home and get an honest price before you commit to anything.</span></div>
+        </div>
+      </div>
+
+      <div class="plans">
+        <div class="plan">
+          <h3>One-Time Deep Clean</h3>
+          <p>Top-to-bottom detail for move-ins, move-outs, or a fresh start.</p>
+          <p class="call">Call for a free quote</p>
+        </div>
+        <div class="plan">
+          <h3>Recurring Cleaning</h3>
+          <p>Weekly, bi-weekly, or monthly visits that keep things effortless.</p>
+          <p class="call">Call for a free quote</p>
+        </div>
+        <div class="plan">
+          <h3>Special Occasions</h3>
+          <p>Before guests arrive or after the party. We handle the mess.</p>
+          <p class="call">Call for a free quote</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Temecula House Cleaner, Temecula, CA. All rights reserved.
+</footer>
+
+<script>
+function showPane(which){
+  document.getElementById('paneBefore').classList.toggle('active', which==='before');
+  document.getElementById('paneAfter').classList.toggle('active', which==='after');
+  document.getElementById('btnBefore').classList.toggle('active', which==='before');
+  document.getElementById('btnAfter').classList.toggle('active', which==='after');
+}
+</script>
+</body>
+</html>

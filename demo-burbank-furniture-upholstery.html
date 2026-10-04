@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burbank Furniture Upholstery | Burbank, CA</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color:#3a2f28; background:#faf6ef; line-height:1.65; }
+  header { background:#4a2c1a; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  header .brand { font-size:1.35rem; font-weight:bold; letter-spacing:0.5px; }
+  header .brand span { color:#e0a96d; }
+  header .addr { font-size:0.9rem; color:#e8d9c6; }
+  nav { background:#3a2113; padding:10px 24px; }
+  nav a { color:#e8d9c6; text-decoration:none; margin-right:22px; font-size:0.95rem; }
+  nav a:hover { color:#fff; text-decoration:underline; }
+  .hero { background:linear-gradient(rgba(58,33,19,.6), rgba(58,33,19,.6)), #6b4a2f; color:#fff; text-align:center; padding:56px 20px; }
+  .hero h1 { font-size:2.3rem; margin-bottom:10px; }
+  .hero p { max-width:640px; margin:0 auto; color:#f2e6d4; font-size:1.08rem; }
+  .wrap { max-width:1020px; margin:0 auto; padding:30px 20px; }
+  .toggle-box { background:#fff; border:2px solid #4a2c1a; border-radius:10px; padding:22px; margin-bottom:34px; }
+  .toggle-box .instr { font-size:1.02rem; margin-bottom:14px; }
+  .toggle-btns { display:flex; gap:12px; margin-bottom:18px; flex-wrap:wrap; }
+  .toggle-btns button { padding:10px 22px; font-size:1rem; border-radius:6px; border:2px solid #4a2c1a; cursor:pointer; background:#fff; color:#4a2c1a; font-weight:bold; }
+  .toggle-btns button.active { background:#4a2c1a; color:#fff; }
+  .pane { display:none; }
+  .pane.active { display:block; }
+  .before-pane { border:1px dashed #b00020; background:#fff8f8; border-radius:8px; padding:18px; font-size:0.95rem; }
+  .before-pane .label { display:inline-block; background:#b00020; color:#fff; font-size:0.8rem; padding:3px 10px; border-radius:4px; margin-bottom:10px; font-family:Arial, sans-serif; }
+  .flaw { background:#fff; border:1px solid #e0caca; padding:12px 14px; border-radius:6px; margin:10px 0; }
+  .flaw .strike { color:#b00020; font-weight:bold; }
+  .flaw p.lorem { color:#777; font-style:italic; }
+  .flaw .quote-mark { font-size:1.4rem; color:#999; }
+  .services { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:30px; }
+  @media (max-width:750px){ .services{grid-template-columns:1fr;} }
+  .svc { background:#fff; border-radius:10px; padding:22px; box-shadow:0 2px 10px rgba(0,0,0,.07); border-top:4px solid #e0a96d; }
+  .svc h3 { color:#4a2c1a; margin-bottom:8px; }
+  .svc p { color:#5a4c41; font-size:0.96rem; }
+  .craft { background:#4a2c1a; color:#f2e6d4; border-radius:10px; padding:26px; margin-bottom:30px; }
+  .craft h2 { color:#fff; margin-bottom:10px; }
+  .reviews { background:#fff; border-radius:10px; padding:26px; box-shadow:0 2px 10px rgba(0,0,0,.07); }
+  .reviews h2 { color:#4a2c1a; margin-bottom:10px; }
+  .reviews .slot { border:2px dashed #c9a877; border-radius:8px; padding:20px; margin-top:14px; color:#7a6a5a; text-align:center; }
+  .visit { background:#fff; border-radius:10px; padding:26px; box-shadow:0 2px 10px rgba(0,0,0,.07); margin-top:26px; }
+  .visit h2 { color:#4a2c1a; margin-bottom:10px; }
+  footer { background:#3a2113; color:#d9c6ac; text-align:center; padding:24px 20px; margin-top:40px; font-size:0.9rem; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Burbank <span>Furniture Upholstery</span></div>
+  <div class="addr">138 N. Pass Ave. #3, Burbank, CA 91505</div>
+</header>
+<nav>
+  <a href="#">Home</a><a href="#">Furniture Upholstery</a><a href="#">Fabric Gallery</a><a href="#">About</a><a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+  <h1>Furniture Upholstery in Burbank</h1>
+  <p>Give your favorite sofa, chair, or dining set a second life. Expert reupholstery by craftsmen who care about the details.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="toggle-box">
+    <p class="instr"><strong>Tap the buttons below to flip between your current page and the cleaned-up version:</strong></p>
+    <div class="toggle-btns">
+      <button id="btnBefore" onclick="showPane('before')">Before (your current page)</button>
+      <button id="btnAfter" class="active" onclick="showPane('after')">After (cleaned up)</button>
+    </div>
+
+    <div id="paneBefore" class="pane before-pane">
+      <span class="label">BEFORE</span>
+      <p>A small sample of what is live on your page right now:</p>
+      <div class="flaw">
+        <span class="strike">A testimonial that was never finished:</span>
+        <p><span class="quote-mark">&gt;</span> I have very much enjoyed with your services. <span class="lorem">Lorem ipsum dolor sit amet...</span></p>
+        <p><span class="quote-mark">&gt;</span> John, Customer</p>
+      </div>
+      <div class="flaw">
+        <span class="strike">Outbound links to unrelated third-party websites</span> hidden inside keyword text in the page body, sending your visitors away to sites that have nothing to do with upholstery.
+      </div>
+      <p style="margin-top:8px; color:#555;">(This is only a sample. Your full page was not copied here.)</p>
+    </div>
+
+    <div id="paneAfter" class="pane after-pane active">
+      <div class="services">
+        <div class="svc">
+          <h3>Sofa &amp; Couch Reupholstery</h3>
+          <p>New fabric, fresh padding, and solid frames brought back to comfort.</p>
+        </div>
+        <div class="svc">
+          <h3>Chairs &amp; Dining Sets</h3>
+          <p>Seat cushions, backs, and full dining sets recovered to match your home.</p>
+        </div>
+        <div class="svc">
+          <h3>Custom Fabric Work</h3>
+          <p>Choose from hundreds of fabrics. We handle the measuring, cutting, and fitting.</p>
+        </div>
+      </div>
+
+      <div class="craft">
+        <h2>Why Reupholster?</h2>
+        <p>Good furniture is worth keeping. Reupholstering costs less than buying new, keeps solid wood frames out of the landfill, and lets you pick exactly the fabric and color you want. Bring your piece by our Burbank shop and we will talk through the options and give you a free estimate.</p>
+      </div>
+
+      <div class="reviews">
+        <h2>What Our Customers Say</h2>
+        <p style="color:#5a4c41;">Real reviews from real customers belong here. Once added, they do the selling for you.</p>
+        <div class="slot">
+          <p><strong>Your customer reviews go here.</strong></p>
+          <p style="font-size:0.92rem; margin-top:6px;">Ask happy customers for a short quote after each job. We can add them in minutes.</p>
+        </div>
+      </div>
+
+      <div class="visit">
+        <h2>Visit Our Shop</h2>
+        <p><strong>Burbank Furniture Upholstery</strong><br>
+        138 N. Pass Ave. #3<br>
+        Burbank, CA 91505<br><br>
+        Email: Design@BurbankUpholstery.com</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Burbank Furniture Upholstery, Burbank, CA. All rights reserved.
+</footer>
+
+<script>
+function showPane(which){
+  document.getElementById('paneBefore').classList.toggle('active', which==='before');
+  document.getElementById('paneAfter').classList.toggle('active', which==='after');
+  document.getElementById('btnBefore').classList.toggle('active', which==='before');
+  document.getElementById('btnAfter').classList.toggle('active', which==='after');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OB Electrical Services | Electrician in Stratford-upon-Avon</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #222; background: #fafafa; line-height: 1.6; }
+  .stripe { background: repeating-linear-gradient(45deg, #ffcc00, #ffcc00 18px, #1a1a1a 18px, #1a1a1a 36px); height: 14px; }
+  header { background: #1a1a1a; color: #fff; padding: 30px 20px; text-align: center; }
+  header .logo { display: inline-block; background: #ffcc00; color: #1a1a1a; font-weight: bold; font-size: 26px; padding: 8px 22px; border-radius: 6px; letter-spacing: 2px; }
+  header p { color: #ddd; margin-top: 10px; font-size: 16px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; }
+  .toggle-wrap { background: #fff; border: 2px dashed #1a1a1a; border-radius: 10px; padding: 18px; margin-bottom: 28px; text-align: center; }
+  .toggle-instructions { font-size: 16px; margin-bottom: 12px; }
+  .toggle-btns { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .toggle-btn { border: 2px solid #1a1a1a; background: #fff; color: #1a1a1a; padding: 10px 20px; font-size: 15px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+  .toggle-btn.active { background: #1a1a1a; color: #ffcc00; }
+  .snippet-label { font-size: 14px; color: #7a4b00; background: #fff7e6; border: 1px solid #e8c47a; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+  .code-box { background: #1a1a1a; color: #ffcc00; font-family: 'Courier New', monospace; font-size: 15px; padding: 18px; border-radius: 8px; white-space: pre-wrap; margin-bottom: 14px; }
+  .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 10px rgba(0,0,0,.08); margin-bottom: 24px; border-top: 6px solid #ffcc00; }
+  .card h2 { font-size: 24px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+  .card p { margin-bottom: 12px; }
+  .dup { border: 2px solid #c0392b; border-radius: 8px; padding: 16px; margin-bottom: 16px; background: #fdf0ef; }
+  .dup .tag { display: inline-block; background: #c0392b; color: #fff; font-size: 12px; padding: 2px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .contact-block { display: flex; flex-wrap: wrap; gap: 16px; margin: 16px 0; }
+  .contact-item { flex: 1 1 220px; background: #1a1a1a; color: #fff; border-radius: 8px; padding: 16px; }
+  .contact-item strong { color: #ffcc00; display: block; font-size: 13px; letter-spacing: 1px; margin-bottom: 6px; }
+  form .row { margin-bottom: 14px; }
+  form label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 15px; }
+  form input, form textarea { width: 100%; padding: 11px 12px; font-size: 16px; border: 1px solid #c9c9c9; border-radius: 6px; font-family: inherit; }
+  form input:focus, form textarea:focus { outline: 2px solid #ffcc00; border-color: #c79a00; }
+  form button { background: #ffcc00; color: #1a1a1a; border: none; padding: 14px 28px; font-size: 17px; font-weight: bold; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; }
+  form button:hover { background: #e6b800; }
+  .success { display: none; background: #e8f7e9; border: 1px solid #7cc47f; color: #1f6b2a; border-radius: 8px; padding: 14px 18px; margin-top: 16px; font-size: 16px; }
+  footer { background: #1a1a1a; color: #bbb; text-align: center; padding: 24px 20px; font-size: 14px; }
+  footer strong { color: #ffcc00; }
+</style>
+</head>
+<body>
+
+<div class="stripe"></div>
+<header>
+  <span class="logo">OB ELECTRICAL</span>
+  <p>Electrician serving Stratford-upon-Avon and the local area</p>
+</header>
+<div class="stripe"></div>
+
+<div class="wrap">
+
+  <div class="toggle-wrap">
+    <p class="toggle-instructions">Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle-btns">
+      <button class="toggle-btn active" data-view="after">Cleaned-up version</button>
+      <button class="toggle-btn" data-view="before">Current version (problem)</button>
+    </div>
+  </div>
+
+  <div id="view-before" style="display:none;">
+    <div class="snippet-label"><strong>Illustrative snippet of the current problem</strong> (not your full site). Two separate issues appear on the homepage:</div>
+    <div class="card">
+      <h2>Get in Touch</h2>
+      <div class="code-box">[contact-form-7 id="131" title="Contact Page Form"]</div>
+      <p style="color:#a33;">The quote form shows this line of code instead of a working form.</p>
+    </div>
+    <div class="dup">
+      <span class="tag">Duplicated contact block</span>
+      <p><strong>OFFICE LINE / EMAIL / WORKING HOURS</strong> contact details appear here once...</p>
+      <p>...and then the exact same <strong>OFFICE LINE / EMAIL / WORKING HOURS</strong> block repeats again, word for word.</p>
+    </div>
+  </div>
+
+  <div id="view-after">
+    <div class="card">
+      <h2>About OB Electrical Services</h2>
+      <p>OB Electrical Services is a local electrician run by Ollie, growing the business through word of mouth in Stratford-upon-Avon and the surrounding area.</p>
+      <p>From small repairs to full rewires, every job is completed to a high standard with a tidy finish. Call for a free quote.</p>
+    </div>
+
+    <div class="card">
+      <h2>Get in Touch</h2>
+      <p>Request a quote using the form below and Ollie will get back to you.</p>
+      <form id="quoteForm">
+        <div class="row">
+          <label for="fName">Your name</label>
+          <input type="text" id="fName" name="name" placeholder="e.g. Emma Wilson">
+        </div>
+        <div class="row">
+          <label for="fPhone">Phone number</label>
+          <input type="tel" id="fPhone" name="phone" placeholder="e.g. 07123 456789">
+        </div>
+        <div class="row">
+          <label for="fEmail">Email address</label>
+          <input type="email" id="fEmail" name="email" placeholder="e.g. emma@example.co.uk">
+        </div>
+        <div class="row">
+          <label for="fMsg">What electrical work do you need?</label>
+          <textarea id="fMsg" name="message" rows="4" placeholder="Briefly describe the job..."></textarea>
+        </div>
+        <button type="submit">Request a quote</button>
+      </form>
+      <div class="success" id="formSuccess">Thanks, your quote request has been sent. Ollie will be in touch soon.</div>
+
+      <div class="contact-block">
+        <div class="contact-item">
+          <strong>OFFICE LINE</strong>
+          Call for a free quote
+        </div>
+        <div class="contact-item">
+          <strong>EMAIL</strong>
+          info@o-b-electrical.co.uk
+        </div>
+        <div class="contact-item">
+          <strong>WORKING HOURS</strong>
+          Stratford-upon-Avon based
+        </div>
+      </div>
+      <p style="font-size:13px; color:#777;">Contact details shown once, clearly, in a single block.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>OB Electrical Services</strong><br>
+  Stratford-upon-Avon &nbsp;|&nbsp; info@o-b-electrical.co.uk
+</footer>
+
+<script>
+document.querySelectorAll('.toggle-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.toggle-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var view = btn.getAttribute('data-view');
+    document.getElementById('view-after').style.display = view === 'after' ? 'block' : 'none';
+    document.getElementById('view-before').style.display = view === 'before' ? 'block' : 'none';
+  });
+});
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = document.getElementById('fName').value.trim();
+  var phone = document.getElementById('fPhone').value.trim();
+  var msg = document.getElementById('fMsg').value.trim();
+  if (!name || !phone || !msg) {
+    alert('Please add your name, phone number and a few words about the job.');
+    return;
+  }
+  document.getElementById('formSuccess').style.display = 'block';
+  this.reset();
+  window.scrollTo(0, 0);
+});
+</script>
+
+</body>
+</html>

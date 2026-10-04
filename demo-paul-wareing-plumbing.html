@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paul Wareing Plumbing &amp; Heating | Plumber in Colchester, Essex</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Verdana, Geneva, sans-serif; color: #232d2b; background: #f2f6f4; line-height: 1.65; }
+  header { background: #14532d; color: #fff; padding: 30px 20px; text-align: center; }
+  header h1 { font-size: 28px; }
+  header p { color: #d9e8d0; margin-top: 6px; font-size: 15px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 24px 20px 60px; }
+  .toggle-wrap { background: #fff; border: 2px dashed #14532d; border-radius: 10px; padding: 18px; margin-bottom: 28px; text-align: center; }
+  .toggle-instructions { font-size: 16px; margin-bottom: 12px; }
+  .toggle-btns { display: inline-flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  .toggle-btn { border: 2px solid #14532d; background: #fff; color: #14532d; padding: 10px 20px; font-size: 15px; border-radius: 6px; cursor: pointer; font-family: inherit; }
+  .toggle-btn.active { background: #14532d; color: #fff; }
+  .snippet-label { font-size: 14px; color: #7a4b00; background: #fff7e6; border: 1px solid #e8c47a; border-radius: 8px; padding: 12px 16px; margin-bottom: 14px; }
+  .card { background: #fff; border-radius: 10px; padding: 28px; box-shadow: 0 2px 10px rgba(20,83,45,.08); margin-bottom: 24px; }
+  .card h2 { color: #14532d; font-size: 23px; margin-bottom: 10px; border-bottom: 3px solid #e0a92e; display: inline-block; padding-bottom: 4px; }
+  .card p { margin-bottom: 12px; }
+  .dup { border: 2px solid #c0392b; border-radius: 8px; padding: 16px; margin-bottom: 16px; background: #fdf0ef; }
+  .dup .tag { display: inline-block; background: #c0392b; color: #fff; font-size: 12px; padding: 2px 10px; border-radius: 4px; margin-bottom: 8px; }
+  .status-both { margin-top: 16px; }
+  .msg { border-radius: 8px; padding: 14px 18px; margin-bottom: 12px; font-size: 15px; }
+  .msg.ok { background: #e8f7e9; border: 1px solid #7cc47f; color: #1f6b2a; }
+  .msg.err { background: #fdecea; border: 1px solid #e08a7f; color: #8f2b21; }
+  form .row { margin-bottom: 14px; }
+  form label { display: block; font-weight: bold; margin-bottom: 5px; font-size: 15px; }
+  form input, form textarea { width: 100%; padding: 11px 12px; font-size: 16px; border: 1px solid #a9bcb2; border-radius: 6px; font-family: inherit; }
+  form input:focus, form textarea:focus { outline: 2px solid #e0a92e; border-color: #e0a92e; }
+  form button { background: #14532d; color: #fff; border: none; padding: 14px 28px; font-size: 17px; border-radius: 6px; cursor: pointer; font-family: inherit; width: 100%; }
+  form button:hover { background: #0e3d21; }
+  .towns { margin-top: 14px; font-size: 15px; }
+  .towns span { display: inline-block; background: #eef4ec; border: 1px solid #c6dcc3; border-radius: 20px; padding: 4px 14px; margin: 4px 4px 0 0; }
+  .form-status { margin-top: 16px; }
+  footer { background: #14532d; color: #cfe0cc; text-align: center; padding: 24px 20px; font-size: 14px; }
+  footer strong { color: #fff; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Paul Wareing Plumbing &amp; Heating</h1>
+  <p>Based in Great Bromley, serving Colchester and the surrounding areas</p>
+</header>
+
+<div class="wrap">
+
+  <div class="toggle-wrap">
+    <p class="toggle-instructions">Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle-btns">
+      <button class="toggle-btn active" data-view="after">Cleaned-up version</button>
+      <button class="toggle-btn" data-view="before">Current version (problem)</button>
+    </div>
+  </div>
+
+  <div id="view-before" style="display:none;">
+    <div class="snippet-label"><strong>Illustrative snippet of the current problem</strong> (not your full site). The contact section appears twice with identical copy, and both the success and failure messages show before anyone has sent anything:</div>
+    <div class="dup">
+      <span class="tag">Section 1 of 2</span>
+      <h2>Email to Discuss Your Requirements</h2>
+      <p>Fill out the form below and we will get back to you within 24 hours.</p>
+    </div>
+    <div class="dup">
+      <span class="tag">Section 2 of 2 (identical)</span>
+      <h2>Email to Discuss Your Requirements</h2>
+      <p>Fill out the form below and we will get back to you within 24 hours.</p>
+    </div>
+    <div class="status-both">
+      <div class="msg ok">Your message has been sent, we will be in touch within 24 hours.</div>
+      <div class="msg err">Sorry, something went wrong sending your message. Please try again or call us directly.</div>
+      <p style="font-size:14px; color:#8f2b21;">Both messages are visible at the same time, before any form has been submitted.</p>
+    </div>
+  </div>
+
+  <div id="view-after">
+    <div class="card">
+      <h2>Email to Discuss Your Requirements</h2>
+      <p>Fill out the form below and we will get back to you within 24 hours.</p>
+      <form id="contactForm">
+        <div class="row">
+          <label for="fName">Your name</label>
+          <input type="text" id="fName" name="name" placeholder="e.g. David Smith">
+        </div>
+        <div class="row">
+          <label for="fEmail">Email address</label>
+          <input type="email" id="fEmail" name="email" placeholder="e.g. david@example.co.uk">
+        </div>
+        <div class="row">
+          <label for="fPhone">Phone number (optional)</label>
+          <input type="tel" id="fPhone" name="phone" placeholder="e.g. 07123 456789">
+        </div>
+        <div class="row">
+          <label for="fMsg">Your requirements</label>
+          <textarea id="fMsg" name="message" rows="5" placeholder="Tell us about the job..."></textarea>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+      <div class="form-status" id="formStatus"></div>
+    </div>
+
+    <div class="card">
+      <h2>Areas we cover</h2>
+      <p>Paul Wareing Plumbing &amp; Heating is based in Great Bromley and serves customers across:</p>
+      <div class="towns">
+        <span>Colchester</span><span>Ipswich</span><span>Tendring</span><span>Witham</span><span>Clacton</span><span>Sudbury</span><span>Tiptree</span>
+      </div>
+      <p style="margin-top:16px;">Prefer email? Write to paul@plumber-colchester.co.uk and we will reply within 24 hours.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <strong>Paul Wareing Plumbing &amp; Heating</strong><br>
+  Great Bromley, Colchester, Essex &nbsp;|&nbsp; paul@plumber-colchester.co.uk
+</footer>
+
+<script>
+document.querySelectorAll('.toggle-btn').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    document.querySelectorAll('.toggle-btn').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    var view = btn.getAttribute('data-view');
+    document.getElementById('view-after').style.display = view === 'after' ? 'block' : 'none';
+    document.getElementById('view-before').style.display = view === 'before' ? 'block' : 'none';
+  });
+});
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var name = document.getElementById('fName').value.trim();
+  var email = document.getElementById('fEmail').value.trim();
+  var msg = document.getElementById('fMsg').value.trim();
+  var status = document.getElementById('formStatus');
+  if (!name || !email || !msg) {
+    status.innerHTML = '<div class="msg err">Please fill in your name, email and message so we can reply.</div>';
+    return;
+  }
+  status.innerHTML = '<div class="msg ok">Your message has been sent, we will be in touch within 24 hours.</div>';
+  this.reset();
+});
+</script>
+
+</body>
+</html>

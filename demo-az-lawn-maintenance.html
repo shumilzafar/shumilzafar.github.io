@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | AZ Lawn Maintenance - Mesa, AZ</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Georgia, 'Times New Roman', serif; color:#2c2c2c; background:#f7f5ef; line-height:1.6; }
+  header { background:#1f5c2e; color:#fff; padding:14px 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  header .brand { font-size:1.4rem; font-weight:bold; letter-spacing:1px; }
+  header .brand span { color:#bfe3b4; }
+  header .phone { font-size:1.05rem; }
+  header .phone a { color:#fff; text-decoration:none; font-weight:bold; }
+  nav { background:#164823; padding:10px 24px; }
+  nav a { color:#dcebd4; text-decoration:none; margin-right:22px; font-size:0.95rem; }
+  nav a:hover { color:#fff; text-decoration:underline; }
+  .hero { background:linear-gradient(rgba(20,60,30,.55), rgba(20,60,30,.55)), #3d7a4a; color:#fff; text-align:center; padding:56px 20px; }
+  .hero h1 { font-size:2.4rem; margin-bottom:10px; }
+  .hero p { font-size:1.1rem; max-width:640px; margin:0 auto; color:#eef5ea; }
+  .wrap { max-width:1020px; margin:0 auto; padding:30px 20px; }
+  .toggle-box { background:#fff; border:2px solid #1f5c2e; border-radius:10px; padding:22px; margin-bottom:34px; }
+  .toggle-box .instr { font-size:1.02rem; margin-bottom:14px; }
+  .toggle-btns { display:flex; gap:12px; margin-bottom:18px; flex-wrap:wrap; }
+  .toggle-btns button { padding:10px 22px; font-size:1rem; border-radius:6px; border:2px solid #1f5c2e; cursor:pointer; background:#fff; color:#1f5c2e; font-weight:bold; }
+  .toggle-btns button.active { background:#1f5c2e; color:#fff; }
+  .pane { display:none; }
+  .pane.active { display:block; }
+  .before-pane { border:1px dashed #b00020; background:#fff8f8; border-radius:8px; padding:18px; }
+  .before-pane .label { display:inline-block; background:#b00020; color:#fff; font-size:0.8rem; padding:3px 10px; border-radius:4px; margin-bottom:10px; font-family:Arial, sans-serif; }
+  .before-pane .flaw { background:#fff; border:1px solid #e0caca; padding:14px; border-radius:6px; margin:12px 0; }
+  .before-pane .flaw h3 { font-size:1.2rem; color:#333; }
+  .before-pane .flaw p.lorem { color:#777; font-style:italic; }
+  .before-pane .dup-note { color:#b00020; font-weight:bold; font-family:Arial, sans-serif; font-size:0.92rem; margin-top:10px; }
+  .after-grid { display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+  @media (max-width:700px){ .after-grid{grid-template-columns:1fr;} }
+  .contact-card { background:#fff; border-radius:10px; padding:26px; box-shadow:0 2px 10px rgba(0,0,0,.08); }
+  .contact-card h2 { color:#1f5c2e; margin-bottom:8px; font-size:1.5rem; }
+  .contact-card p.sub { color:#555; margin-bottom:18px; }
+  .contact-card label { display:block; font-weight:bold; margin:12px 0 4px; font-size:0.95rem; }
+  .contact-card input, .contact-card textarea { width:100%; padding:10px; border:1px solid #bbb; border-radius:6px; font-size:1rem; font-family:Arial, sans-serif; }
+  .contact-card textarea { min-height:110px; resize:vertical; }
+  .contact-card button.send { background:#1f5c2e; color:#fff; border:none; padding:12px 28px; border-radius:6px; font-size:1rem; margin-top:16px; cursor:pointer; font-weight:bold; }
+  .contact-card button.send:hover { background:#164823; }
+  .demo-note { font-size:0.82rem; color:#888; margin-top:10px; font-family:Arial, sans-serif; }
+  .info-list { background:#fff; border-radius:10px; padding:26px; box-shadow:0 2px 10px rgba(0,0,0,.08); }
+  .info-list h2 { color:#1f5c2e; margin-bottom:14px; font-size:1.5rem; }
+  .info-item { display:flex; gap:14px; padding:14px 0; border-bottom:1px solid #eee; }
+  .info-item:last-child { border-bottom:none; }
+  .info-item .icon { font-size:1.6rem; }
+  .info-item strong { display:block; color:#1f5c2e; }
+  footer { background:#164823; color:#dcebd4; text-align:center; padding:26px 20px; margin-top:40px; font-size:0.92rem; }
+  footer .serving { margin-top:6px; color:#a9cba0; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">AZ Lawn <span>Maintenance</span></div>
+  <div class="phone">Call us: <a href="tel:+14808289565">(480) 828-9565</a></div>
+</header>
+<nav>
+  <a href="#">Home</a><a href="#">Lawn Services</a><a href="#">About</a><a href="#">Contact Us</a>
+</nav>
+
+<div class="hero">
+  <h1>Contact AZ Lawn Maintenance</h1>
+  <p>Lawn care and maintenance serving Mesa, Arizona. Reach out for a free quote.</p>
+</div>
+
+<div class="wrap">
+
+  <div class="toggle-box">
+    <p class="instr"><strong>Tap the buttons below to flip between your current page and the cleaned-up version:</strong></p>
+    <div class="toggle-btns">
+      <button id="btnBefore" onclick="showPane('before')">Before (your current page)</button>
+      <button id="btnAfter" class="active" onclick="showPane('after')">After (cleaned up)</button>
+    </div>
+
+    <div id="paneBefore" class="pane before-pane">
+      <span class="label">BEFORE</span>
+      <p>Here is a small sample of what visitors see on your Contact Us page right now:</p>
+      <div class="flaw">
+        <h3>Let's Talk and Greening Your Garden.</h3>
+        <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+      </div>
+      <p class="dup-note">Also: the "Location / Email Us / Call Us" block repeats TWICE on the same page, with empty bullet points in between.</p>
+      <p style="margin-top:10px; font-family:Arial,sans-serif; font-size:0.9rem; color:#555;">(This is only a sample. Your full page was not copied here.)</p>
+    </div>
+
+    <div id="paneAfter" class="pane after-pane active">
+      <div class="after-grid">
+        <div class="contact-card">
+          <h2>Get in Touch</h2>
+          <p class="sub">Tell us about your lawn and we will get back to you with a free quote.</p>
+          <form onsubmit="event.preventDefault(); document.getElementById('sent').style.display='block';">
+            <label for="n">Name</label>
+            <input id="n" type="text" placeholder="Your name" required>
+            <label for="p">Phone</label>
+            <input id="p" type="tel" placeholder="Your phone number" required>
+            <label for="m">Message</label>
+            <textarea id="m" placeholder="What does your lawn need?"></textarea>
+            <button class="send" type="submit">Send Message</button>
+          </form>
+          <p id="sent" class="demo-note" style="display:none; color:#1f5c2e; font-weight:bold;">Message ready. (Demo: on your real site this would send the message to you.)</p>
+        </div>
+        <div class="info-list">
+          <h2>Find Us</h2>
+          <div class="info-item">
+            <div class="icon">&#x1F4CD;</div>
+            <div><strong>Location</strong>626 N Date, Mesa, AZ 85201</div>
+          </div>
+          <div class="info-item">
+            <div class="icon">&#x1F4E7;</div>
+            <div><strong>Email Us</strong>azlawnmaintenance@gmail.com</div>
+          </div>
+          <div class="info-item">
+            <div class="icon">&#x1F4DE;</div>
+            <div><strong>Call Us</strong>(480) 828-9565</div>
+          </div>
+          <p class="demo-note">Each block shown once, with real details filled in.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="text-align:center; color:#555; font-size:0.95rem;">Serving homeowners across Mesa with mowing, edging, trimming, and yard cleanups. Call <strong>(480) 828-9565</strong> for a free quote.</p>
+
+</div>
+
+<footer>
+  &copy; 2026 AZ Lawn Maintenance. All rights reserved.
+  <div class="serving">Lawn care serving Mesa, AZ</div>
+</footer>
+
+<script>
+function showPane(which){
+  document.getElementById('paneBefore').classList.toggle('active', which==='before');
+  document.getElementById('paneAfter').classList.toggle('active', which==='after');
+  document.getElementById('btnBefore').classList.toggle('active', which==='before');
+  document.getElementById('btnAfter').classList.toggle('active', which==='after');
+}
+</script>
+</body>
+</html>

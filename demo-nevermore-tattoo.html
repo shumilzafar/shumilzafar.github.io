@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nevermore Tattoo Parlour - Custom Tattoos in Daventry</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#0d0c0e; color:#ece5d8; font-family:Georgia,'Times New Roman',serif; line-height:1.6; }
+  header { background:#141216; border-bottom:2px solid #b8352f; padding:1.2rem 2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  header h1 { font-size:1.8rem; letter-spacing:3px; text-transform:uppercase; color:#ece5d8; }
+  header h1 span { color:#b8352f; }
+  nav a { color:#c9bfae; text-decoration:none; margin-left:1.4rem; font-size:.95rem; letter-spacing:1px; }
+  nav a:hover { color:#b8352f; }
+  .hero { text-align:center; padding:4.5rem 1.5rem; background:radial-gradient(ellipse at center,#1d1a1f 0%,#0d0c0e 70%); border-bottom:1px solid #2a262c; }
+  .hero h2 { font-size:2.8rem; letter-spacing:4px; text-transform:uppercase; margin-bottom:1rem; }
+  .hero p { color:#b3a893; font-size:1.15rem; max-width:640px; margin:0 auto; }
+  .btn { display:inline-block; margin-top:1.6rem; padding:.85rem 2.2rem; background:#b8352f; color:#fff; text-decoration:none; letter-spacing:2px; text-transform:uppercase; font-size:.9rem; border:none; cursor:pointer; }
+  .btn:hover { background:#96291f; }
+  .btn.ghost { background:transparent; border:1px solid #b8352f; color:#e7b7a2; }
+  section { max-width:900px; margin:0 auto; padding:3.5rem 1.5rem; }
+  section h2 { font-size:1.9rem; letter-spacing:2px; text-transform:uppercase; border-bottom:1px solid #b8352f; padding-bottom:.6rem; margin-bottom:1.5rem; }
+  section h2 .fixed { color:#b8352f; }
+  .toggle-wrap { background:#141216; border:1px solid #2a262c; border-radius:8px; padding:2rem; margin:2.5rem 0; }
+  .toggle-btns { display:flex; gap:.8rem; margin-bottom:1.4rem; flex-wrap:wrap; }
+  .toggle-btns button { padding:.7rem 1.4rem; font-size:.95rem; cursor:pointer; border:1px solid #b8352f; background:transparent; color:#e7b7a2; letter-spacing:1px; }
+  .toggle-btns button.active { background:#b8352f; color:#fff; }
+  .before-box { background:#1d1a1f; border-left:4px solid #b8352f; padding:1.4rem; font-size:1.05rem; color:#c9bfae; }
+  .before-box .cut { position:relative; display:inline-block; }
+  .before-box .cut::before { content:""; position:absolute; left:-2px; top:0; bottom:0; width:8px; background:#0d0c0e; }
+  .before-label, .after-label { font-size:.85rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:.8rem; color:#8f8574; }
+  .after-box { background:#1d1a1f; border-left:4px solid #4d8f4d; padding:1.4rem; }
+  .after-box h3 { font-size:1.35rem; margin-bottom:.5rem; }
+  .after-box h3 .fix { color:#7fc97f; }
+  .after-box p { color:#b3a893; margin-bottom:1rem; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+  .card { background:#141216; border:1px solid #2a262c; padding:1.6rem; }
+  .card h3 { font-size:1.3rem; margin-bottom:.7rem; color:#e7b7a2; letter-spacing:1px; }
+  .card p { color:#b3a893; }
+  footer { background:#141216; border-top:2px solid #b8352f; padding:2rem; text-align:center; color:#8f8574; font-size:.95rem; }
+  footer a { color:#c9bfae; }
+  @media(max-width:640px){ .grid{grid-template-columns:1fr;} .hero h2{font-size:2rem;} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Nevermore <span>Tattoo</span></h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#piercing">Piercing</a>
+    <a href="#shop">Shop</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Custom Tattoos in Daventry</h2>
+  <p>In the small market town of Daventry, Nevermore Tattoo Parlour is home to resident artists and piercers. Walk-ins welcome.</p>
+  <a class="btn" href="#visit">Book a Consultation</a>
+</div>
+
+<section>
+  <div class="toggle-wrap">
+    <p style="margin-bottom:1rem; color:#c9bfae;"><strong>Tap the buttons below to flip between your current page and the cleaned-up version:</strong></p>
+    <div class="toggle-btns">
+      <button id="btnBefore" class="active" onclick="showPane('before')">Current Page</button>
+      <button id="btnAfter" onclick="showPane('after')">Cleaned-Up Version</button>
+    </div>
+
+    <div id="paneBefore">
+      <p class="before-label">What visitors see right now</p>
+      <div class="before-box">
+        <p><span class="cut" style="color:#ece5d8;">N</span>estled in the small market town of Daventry...</p>
+        <p><span class="cut" style="color:#ece5d8;">C</span>osmetic Body &amp; Ear <strong>Peircing</strong> by Fay our resident piercer</p>
+        <p><span class="cut" style="color:#ece5d8;">N</span>evermore Tattoo Parlour Clothing range is now available</p>
+      </div>
+      <p style="margin-top:1rem; color:#8f8574; font-size:.9rem;">Headings on the live site render with the first letter cut off, and "Piercing" is misspelled. The browser tab title also ends in a stray % symbol.</p>
+    </div>
+
+    <div id="paneAfter" style="display:none;">
+      <p class="after-label">The same page, fixed</p>
+      <div class="after-box">
+        <h3><span class="fix">N</span>estled in the small market town of Daventry</h3>
+        <p>Full headings render cleanly, so the first thing visitors read is your story, not a broken layout.</p>
+        <h3><span class="fix">C</span>osmetic Body &amp; Ear <strong>Piercing</strong> by Fay, our resident piercer</h3>
+        <p>Spelling corrected across the page, which reads more professionally to new clients.</p>
+        <h3><span class="fix">N</span>evermore Tattoo Parlour clothing range is now available</h3>
+        <p>And the browser tab title reads properly, with no stray % symbol.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <h2><span class="fixed">N</span>estled in the small market town of Daventry</h2>
+    <p style="color:#b3a893;">Nevermore Tattoo Parlour has been tattooing the people of Daventry and Northamptonshire for years. Custom designs, cover-ups, blackwork and fine line - every piece is drawn with you, for you.</p>
+  </div>
+
+  <div class="grid" style="margin-top:2.5rem;">
+    <div class="card" id="piercing">
+      <h3>Cosmetic Body &amp; Ear Piercing</h3>
+      <p>Piercing by Fay, our resident piercer. Professional, hygienic, and honest advice on placement and aftercare.</p>
+    </div>
+    <div class="card" id="shop">
+      <h3>Clothing Range</h3>
+      <p>The Nevermore Tattoo Parlour clothing range is now available in the studio. Ask at the counter.</p>
+    </div>
+  </div>
+
+  <div id="visit" style="margin-top:2.5rem;">
+    <h2>Visit the Studio</h2>
+    <p style="color:#b3a893;">Bishop Crewe House, North Street, Daventry NN11 4GH<br>
+    Email: <a href="mailto:nevermoretattoouk@gmail.com" style="color:#e7b7a2;">nevermoretattoouk@gmail.com</a></p>
+  </div>
+</section>
+
+<footer>
+  Nevermore Tattoo Parlour, Daventry, Northamptonshire.<br>
+  Custom tattoos and cosmetic body &amp; ear piercing.
+</footer>
+
+<script>
+function showPane(which){
+  document.getElementById('paneBefore').style.display = which==='before' ? 'block':'none';
+  document.getElementById('paneAfter').style.display = which==='after' ? 'block':'none';
+  document.getElementById('btnBefore').classList.toggle('active', which==='before');
+  document.getElementById('btnAfter').classList.toggle('active', which==='after');
+}
+</script>
+</body>
+</html>

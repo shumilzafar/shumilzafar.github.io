@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rosetta Plumbing | Hobart's Oldest Plumber</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; color:#2b2b2b; background:#f5f8fb; line-height:1.6; }
+  header { background:#0d3b66; color:#fff; padding:18px 5%; display:flex; justify-content:space-between; align-items:center; }
+  header .logo { font-size:1.35em; font-weight:800; }
+  header .logo span { color:#7fd4ff; }
+  header .cta { background:#1d7bb8; color:#fff; text-decoration:none; font-weight:700; padding:10px 22px; border-radius:6px; }
+  .hero { background:linear-gradient(135deg,#0d3b66,#1d7bb8); color:#fff; padding:64px 5%; text-align:center; }
+  .hero .tag { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.4); padding:6px 16px; border-radius:20px; font-size:.9em; margin-bottom:14px; }
+  .hero h1 { font-size:2.4em; margin-bottom:12px; }
+  .hero p { font-size:1.12em; max-width:620px; margin:0 auto 24px; opacity:.93; }
+  .hero a { background:#fff; color:#0d3b66; text-decoration:none; font-weight:800; padding:14px 34px; border-radius:6px; display:inline-block; }
+  .wrap { max-width:1020px; margin:0 auto; padding:0 5%; }
+  .demo-bar { background:#fff; border:2px dashed #c97b1a; border-radius:10px; padding:22px 26px; margin:34px 0; }
+  .demo-bar p { margin-bottom:12px; }
+  .toggle { display:flex; gap:10px; flex-wrap:wrap; }
+  .toggle button { border:2px solid #0d3b66; background:#fff; color:#0d3b66; font-weight:700; padding:10px 20px; border-radius:6px; cursor:pointer; font-size:.95em; }
+  .toggle button.on { background:#0d3b66; color:#fff; }
+  .panel { margin-top:16px; }
+  .label { font-size:.8em; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:8px; }
+  .label.before { color:#b3261e; } .label.after { color:#1b7a3d; }
+  .before-box { background:#fdf0ef; border:1px solid #e5a09b; border-radius:8px; padding:16px 18px; font-size:.93em; color:#5c201b; }
+  .urlbar { background:#fff; border:1px solid #d8c9c9; border-radius:8px; padding:10px 14px; font-family:Consolas,monospace; font-size:.88em; margin-bottom:12px; }
+  .urlbar .notsecure { color:#b3261e; font-weight:700; }
+  .urlbar .secure { color:#1b7a3d; font-weight:700; }
+  .before-box ul { margin:8px 0 4px 20px; }
+  .before-box .deadlink { display:inline-block; background:#fff; border:1px dashed #e5a09b; padding:8px 14px; border-radius:6px; margin-top:10px; color:#b3261e; text-decoration:line-through; cursor:not-allowed; }
+  .after-box { background:#f0f8f1; border:1px solid #9ed3a8; border-radius:8px; padding:16px 18px; font-size:.93em; }
+  .after-box .worklink { display:inline-block; background:#0d3b66; color:#fff; padding:8px 16px; border-radius:6px; margin-top:10px; text-decoration:none; font-weight:600; }
+  section.block { padding:44px 0; }
+  section.block h2 { color:#0d3b66; margin-bottom:10px; font-size:1.7em; }
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:18px; }
+  .services .card { background:#fff; border-radius:10px; padding:24px; box-shadow:0 2px 8px rgba(0,0,0,.06); border-top:4px solid #1d7bb8; }
+  .services .card h3 { color:#0d3b66; margin-bottom:8px; }
+  .trust { background:#0d3b66; color:#fff; text-align:center; padding:26px 5%; }
+  .trust span { margin:0 18px; font-weight:600; }
+  .contact { background:#fff; border-radius:12px; padding:36px; margin:44px 0; box-shadow:0 2px 12px rgba(0,0,0,.07); text-align:center; }
+  .contact h2 { color:#0d3b66; margin-bottom:10px; }
+  .contact form { display:grid; gap:12px; max-width:440px; margin:20px auto 0; text-align:left; }
+  .contact input, .contact textarea { padding:12px; border:1px solid #c3d4e2; border-radius:6px; font-size:1em; width:100%; }
+  .contact button { background:#0d3b66; color:#fff; border:none; padding:14px; border-radius:6px; font-weight:700; font-size:1em; cursor:pointer; }
+  footer { background:#082a4c; color:#c8dcf0; padding:30px 5%; font-size:.9em; }
+  footer .wrap { display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  .concept { text-align:center; font-size:.78em; color:#7d9dbd; padding:12px; background:#051c33; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">ROSETTA <span>PLUMBING</span></div>
+  <a class="cta" href="#contact">Get a Free Quote</a>
+</header>
+
+<div class="hero">
+  <div class="tag">Hobart's Oldest Plumber</div>
+  <h1>Plumbing Glenorchy &amp; Hobart Can Rely On</h1>
+  <p>General plumbing, blocked drains and hot water systems, done right the first time.</p>
+  <a href="#contact">Call for a Free Quote</a>
+</div>
+
+<div class="wrap">
+  <div class="demo-bar">
+    <p><strong>Demo:</strong> Tap the buttons below to flip between your current page and the cleaned-up version:</p>
+    <div class="toggle">
+      <button class="on" onclick="showPanel('before', this)">Current page (with the flaw)</button>
+      <button onclick="showPanel('after', this)">Cleaned-up version</button>
+    </div>
+    <div class="panel" id="before-panel">
+      <div class="label before">Illustrative snippet of what visitors run into on your site right now</div>
+      <div class="before-box">
+        <div class="urlbar"><span class="notsecure">&#9888; Not secure</span> &nbsp;http://www.rosettaplumbing.com.au</div>
+        <p>Your site loads over <strong>unsecured http://</strong>, so browsers flag it as "Not secure". Visitors also bounce between three different domains:</p>
+        <ul>
+          <li>rosettaplumbing.com.au</li>
+          <li>rosetta.plumbing</li>
+          <li>rosettagroup.com.au</li>
+        </ul>
+        <p>And at least one link on the site goes nowhere, its address is literally just:</p>
+        <span class="deadlink">Learn more &rarr; &nbsp;(link address: "https")</span>
+      </div>
+    </div>
+    <div class="panel" id="after-panel" style="display:none;">
+      <div class="label after">The same site, fixed</div>
+      <div class="after-box">
+        <div class="urlbar"><span class="secure">&#128274; Secure</span> &nbsp;https://www.rosettaplumbing.com.au</div>
+        <p>One secure address, one domain, and every link works:</p>
+        <a class="worklink" href="#contact">Learn more &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <h2>Our Services</h2>
+    <p>Straightforward plumbing for homes and businesses across Glenorchy and Hobart.</p>
+    <div class="services">
+      <div class="card"><h3>General Plumbing</h3><p>Leaks, taps, toilets and pipework repaired properly.</p></div>
+      <div class="card"><h3>Blocked Drains</h3><p>Fast clearing of blocked drains and sewers.</p></div>
+      <div class="card"><h3>Hot Water</h3><p>Hot water system repairs and replacements.</p></div>
+      <div class="card"><h3>Roof Plumbing</h3><p>Gutters, downpipes and roof plumbing sorted.</p></div>
+    </div>
+  </section>
+</div>
+
+<div class="trust">
+  <span>Hobart's oldest plumber</span><span>&#10003; Glenorchy &amp; Hobart</span><span>&#10003; Prompt, reliable service</span>
+</div>
+
+<div class="wrap">
+  <div class="contact" id="contact">
+    <h2>Get in Touch</h2>
+    <p>Call for a free quote, or send a message and we will get back to you promptly.</p>
+    <form onsubmit="return false;">
+      <input type="text" placeholder="Your name">
+      <input type="tel" placeholder="Phone number">
+      <textarea rows="4" placeholder="Tell us about the plumbing job"></textarea>
+      <button type="submit">Request a Callback</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><strong style="color:#fff;">Rosetta Plumbing</strong><br>Glenorchy, Hobart, Tasmania</div>
+    <div>General plumbing &middot; Blocked drains &middot; Hot water</div>
+  </div>
+</footer>
+<div class="concept">Concept mockup prepared for Rosetta Plumbing, not the live site.</div>
+
+<script>
+function showPanel(which, btn){
+  document.querySelectorAll('.toggle button').forEach(function(b){ b.classList.remove('on'); });
+  btn.classList.add('on');
+  document.getElementById('before-panel').style.display = (which === 'before') ? 'block' : 'none';
+  document.getElementById('after-panel').style.display = (which === 'after') ? 'block' : 'none';
+}
+</script>
+</body>
+</html>

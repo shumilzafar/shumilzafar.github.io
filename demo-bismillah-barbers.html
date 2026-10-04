@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bismillah Barbers - Luton</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#f7f5f0; color:#1c1c22; font-family:'Segoe UI',Helvetica,Arial,sans-serif; line-height:1.7; }
+  header { background:#101828; padding:1.1rem 2rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  header h1 { color:#f5f2ea; font-size:1.7rem; letter-spacing:3px; text-transform:uppercase; }
+  header h1 span { color:#d4a72c; }
+  nav a { color:#c8ccd4; text-decoration:none; margin-left:1.3rem; font-size:.95rem; letter-spacing:1px; }
+  nav a:hover { color:#d4a72c; }
+  .hero { text-align:center; padding:4rem 1.5rem; background:#101828; color:#f5f2ea; }
+  .hero .stripe { width:64px; height:3px; background:#d4a72c; margin:0 auto 1.2rem; }
+  .hero h2 { font-size:2.6rem; letter-spacing:3px; text-transform:uppercase; margin-bottom:1rem; }
+  .hero p { color:#b8bfcc; max-width:600px; margin:0 auto; font-size:1.1rem; }
+  .btn { display:inline-block; margin-top:1.6rem; padding:.85rem 2.2rem; background:#d4a72c; color:#101828; text-decoration:none; letter-spacing:2px; text-transform:uppercase; font-weight:bold; font-size:.9rem; border:none; cursor:pointer; }
+  .btn:hover { background:#b8911f; }
+  section { max-width:900px; margin:0 auto; padding:3rem 1.5rem; }
+  section h2 { font-size:1.8rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:1.4rem; border-bottom:3px solid #d4a72c; padding-bottom:.6rem; }
+  .toggle-wrap { background:#fff; border:1px solid #dcd7cb; border-radius:8px; padding:2rem; margin-bottom:2.5rem; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+  .toggle-btns { display:flex; gap:.8rem; margin-bottom:1.4rem; flex-wrap:wrap; }
+  .toggle-btns button { padding:.7rem 1.4rem; font-size:.95rem; cursor:pointer; border:1px solid #101828; background:transparent; color:#101828; letter-spacing:1px; }
+  .toggle-btns button.active { background:#101828; color:#f5f2ea; }
+  .before-label, .after-label { font-size:.85rem; letter-spacing:2px; text-transform:uppercase; margin-bottom:.8rem; color:#8a8578; }
+  .before-box { background:#faf9f6; border-left:4px solid #b8352f; padding:1.4rem; }
+  .before-box h3 { margin-bottom:.8rem; }
+  .shortcode { font-family:monospace; background:#2b2b33; color:#ff9d8a; padding:.8rem 1rem; display:block; margin-top:.8rem; }
+  .after-box { background:#faf9f6; border-left:4px solid #4d8f4d; padding:1.4rem; }
+  form label { display:block; margin:.9rem 0 .35rem; font-weight:bold; font-size:.95rem; letter-spacing:.5px; }
+  form input, form select { width:100%; padding:.75rem; border:1px solid #c9c4b6; border-radius:4px; font-size:1rem; font-family:inherit; }
+  form input:focus, form select:focus { outline:2px solid #d4a72c; border-color:#d4a72c; }
+  .row { display:grid; grid-template-columns:1fr 1fr; gap:1rem; }
+  .success { display:none; background:#e8f5e9; border:1px solid #4d8f4d; color:#2e6b2e; padding:1.2rem; border-radius:4px; margin-top:1.2rem; }
+  .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin-top:1.5rem; }
+  .svc { background:#fff; border:1px solid #dcd7cb; padding:1.2rem; text-align:center; }
+  .svc h3 { font-size:1.05rem; letter-spacing:1px; text-transform:uppercase; margin-bottom:.4rem; }
+  .svc p { color:#6b675c; font-size:.9rem; }
+  footer { background:#101828; color:#b8bfcc; padding:2rem; text-align:center; font-size:.95rem; }
+  footer a { color:#d4a72c; }
+  @media(max-width:640px){ .row{grid-template-columns:1fr;} .hero h2{font-size:1.9rem;} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Bismillah <span>Barbers</span></h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#book">Book</a>
+    <a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="stripe"></div>
+  <h2>Sharp Cuts in Luton</h2>
+  <p>Classic barbering on Leagrave Road. Precision fades, beard trims and traditional shaves, done properly.</p>
+  <a class="btn" href="#book">Book an Appointment</a>
+</div>
+
+<section>
+  <div class="toggle-wrap">
+    <p style="margin-bottom:1rem;"><strong>Tap the buttons below to flip between your current page and the cleaned-up version:</strong></p>
+    <div class="toggle-btns">
+      <button id="btnBefore" class="active" onclick="showPane('before')">Current Page</button>
+      <button id="btnAfter" onclick="showPane('after')">Cleaned-Up Version</button>
+    </div>
+
+    <div id="paneBefore">
+      <p class="before-label">What visitors see right now</p>
+      <div class="before-box">
+        <h3>Fill In The Form To Make An Appointment</h3>
+        <code class="shortcode">[contact-form-7 id="55"]</code>
+      </div>
+      <p style="margin-top:1rem; color:#8a8578; font-size:.9rem;">Instead of a booking form, visitors see this raw code. Nobody can book an appointment from the page.</p>
+    </div>
+
+    <div id="paneAfter" style="display:none;">
+      <p class="after-label">The same page, with a working form</p>
+      <div class="after-box">
+        <form id="bookForm" onsubmit="return handleBook(event)">
+          <div class="row">
+            <div><label for="name">Your Name</label><input id="name" type="text" required></div>
+            <div><label for="phone">Phone Number</label><input id="phone" type="tel" required></div>
+          </div>
+          <label for="service">Service</label>
+          <select id="service" required>
+            <option value="">Select a service</option>
+            <option>Haircut</option>
+            <option>Beard Trim</option>
+            <option>Haircut &amp; Beard</option>
+            <option>Kids Haircut</option>
+            <option>Hot Towel Shave</option>
+          </select>
+          <div class="row">
+            <div><label for="date">Preferred Date</label><input id="date" type="date" required></div>
+            <div><label for="time">Preferred Time</label><input id="time" type="time" required></div>
+          </div>
+          <button class="btn" type="submit" style="margin-top:1.4rem;">Request Appointment</button>
+          <div class="success" id="successMsg">Thanks! Your appointment request has been received. We will confirm by phone shortly.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="services">
+    <h2>Services</h2>
+    <div class="services">
+      <div class="svc"><h3>Haircut</h3><p>Precision cut and finish</p></div>
+      <div class="svc"><h3>Beard Trim</h3><p>Shape, line-up and tidy</p></div>
+      <div class="svc"><h3>Hot Towel Shave</h3><p>Traditional close shave</p></div>
+      <div class="svc"><h3>Kids Haircut</h3><p>Patient, careful cuts</p></div>
+    </div>
+  </div>
+
+  <div id="visit" style="margin-top:2.5rem;">
+    <h2>Find Us</h2>
+    <p>168 Leagrave Road, Luton LU3 1JB<br>
+    Email: <a href="mailto:info@bismillahbarber.co.uk" style="color:#101828; font-weight:bold;">info@bismillahbarber.co.uk</a></p>
+  </div>
+</section>
+
+<footer>
+  Bismillah Barbers, 168 Leagrave Road, Luton.<br>
+  Walk-ins welcome. Appointments preferred.
+</footer>
+
+<script>
+function showPane(which){
+  document.getElementById('paneBefore').style.display = which==='before' ? 'block':'none';
+  document.getElementById('paneAfter').style.display = which==='after' ? 'block':'none';
+  document.getElementById('btnBefore').classList.toggle('active', which==='before');
+  document.getElementById('btnAfter').classList.toggle('active', which==='after');
+}
+function handleBook(e){
+  e.preventDefault();
+  document.getElementById('successMsg').style.display = 'block';
+  document.getElementById('bookForm').querySelectorAll('input,select').forEach(function(el){ el.disabled = true; });
+  return false;
+}
+</script>
+</body>
+</html>
