@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunshine Septic &amp; Trash | Septic Service in Springfield, TN</title>
+<meta name="description" content="Family owned since 1952. Septic pump-outs, inspections, and system service across Springfield, TN and Robertson County.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--green:#1e4d2b;--green-dk:#143620;--amber:#d9a441;--cream:#faf6ec;--ink:#2b2b2b;--muted:#6b675c}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+h1,h2,h3{font-family:'Arvo',serif;color:var(--green-dk)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header.topbar{background:var(--green-dk);color:#fff;padding:10px 0;font-size:.85rem}
+header.topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+header.topbar a{color:var(--amber);text-decoration:none;font-weight:600}
+nav{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:50}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Arvo',serif;font-weight:700;font-size:1.25rem;color:var(--green-dk);text-decoration:none}
+.logo .mark{width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 50% 35%,var(--amber) 0 34%,var(--green) 35%);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.7rem;font-weight:700}
+nav ul{list-style:none;display:flex;gap:22px}
+nav ul a{text-decoration:none;color:var(--ink);font-weight:500;font-size:.95rem}
+nav ul a:hover{color:var(--green)}
+.btn{display:inline-block;background:var(--amber);color:#1d1d1d;font-weight:700;padding:13px 28px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:1rem;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.btn.green{background:var(--green);color:#fff}
+.hero{background:linear-gradient(rgba(20,54,32,.82),rgba(20,54,32,.82)),url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="600" height="300"><rect fill="%23143620" width="600" height="300"/><circle cx="480" cy="60" r="40" fill="%23d9a441" opacity="0.5"/><path d="M0 220 Q150 180 300 215 T600 200 V300 H0 Z" fill="%231e4d2b"/></svg>');background-size:cover;color:#fff;padding:76px 0}
+.hero .kicker{display:inline-block;background:var(--amber);color:#1d1d1d;font-weight:700;font-size:.8rem;padding:6px 14px;border-radius:999px;margin-bottom:16px;letter-spacing:.04em}
+.hero h1{color:#fff;font-size:2.6rem;line-height:1.15;margin-bottom:14px;max-width:640px}
+.hero p.lead{font-size:1.15rem;max-width:560px;color:#efe8d6;margin-bottom:26px}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero .rating{margin-top:22px;font-size:.95rem;color:#efe8d6}
+.hero .rating strong{color:var(--amber)}
+.stats{background:var(--cream);padding:34px 0;border-bottom:3px solid var(--amber)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;text-align:center}
+.stat-num{font-family:'Arvo',serif;font-size:2rem;font-weight:700;color:var(--green)}
+.stat-lbl{font-size:.85rem;color:var(--muted);font-weight:500}
+section{padding:64px 0}
+section.alt{background:var(--cream)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-head h2{font-size:2rem;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border:1px solid #e6e0cf;border-radius:12px;padding:28px;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.card .icon{font-size:2rem;margin-bottom:10px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.trust{background:var(--green-dk);color:#efe8d6;padding:56px 0;text-align:center}
+.trust h2{color:#fff;margin-bottom:12px}
+.trust .big{font-family:'Arvo',serif;font-size:1.6rem;color:var(--amber);margin:10px 0}
+.form-shell{max-width:640px;margin:0 auto;background:#fff;border-radius:14px;padding:36px;box-shadow:0 8px 30px rgba(20,54,32,.12);border-top:6px solid var(--green)}
+.form-shell h2{margin-bottom:6px}
+.form-shell .sub{color:var(--muted);margin-bottom:22px;font-size:.95rem}
+label{display:block;font-weight:600;font-size:.9rem;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid #d8d2bd;border-radius:8px;font-size:1rem;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(30,77,43,.12)}
+textarea{min-height:90px;resize:vertical}
+.form-note{font-size:.82rem;color:var(--muted);margin-top:12px}
+.success{background:#e8f5e9;border:2px solid #2e7d32;color:#1b5e20;padding:20px;border-radius:10px;font-weight:600;text-align:center}
+.ba-toggle{text-align:center;margin-bottom:26px}
+.ba-toggle button{border:2px solid var(--green);background:#fff;color:var(--green);font-weight:700;padding:10px 22px;border-radius:999px;cursor:pointer;margin:0 6px;font-size:.9rem}
+.ba-toggle button.active{background:var(--green);color:#fff}
+.ba-panel{display:none}
+.ba-panel.show{display:block}
+.ba-before{background:#fdeaea;border:2px dashed #c62828;border-radius:12px;padding:30px;max-width:640px;margin:0 auto}
+.ba-before .err{background:#fff;border:1.5px solid #c62828;color:#c62828;padding:14px;border-radius:8px;margin-bottom:14px;font-size:.9rem}
+.ba-cap{font-size:.85rem;color:var(--muted);text-align:center;margin-top:10px}
+footer{background:#1a1a1a;color:#cfc9b8;padding:48px 0 24px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-bottom:28px}
+footer h4{color:#fff;margin-bottom:10px;font-family:'Arvo',serif}
+footer a{color:var(--amber);text-decoration:none}
+footer .fine{text-align:center;border-top:1px solid #333;padding-top:18px;font-size:.8rem;color:#8f8a7a}
+@media(max-width:640px){.hero h1{font-size:2rem}nav ul{display:none}.form-shell{padding:24px 18px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <span>Serving Springfield, TN &amp; Robertson County</span>
+    <a href="tel:+16155431761">Call (615) 543-1761</a>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><span class="mark">SS</span> Sunshine Septic &amp; Trash</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#quote">Request a Quote</a></li>
+    </ul>
+    <a class="btn green" href="#quote" style="padding:10px 20px">Request a Quote</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="kicker">FAMILY OWNED &amp; OPERATED SINCE 1952</span>
+    <h1>Septic Service Springfield, TN Has Trusted for Generations</h1>
+    <p class="lead">Pump-outs, inspections, repairs, and full system service, done right by the same local family your neighbors have called for over 70 years.</p>
+    <div class="cta-row">
+      <a class="btn" href="#quote">Request Setup or Quote</a>
+      <a class="btn green" href="tel:+16155431761">Call (615) 543-1761</a>
+    </div>
+    <div class="rating">Rated <strong>4.9 out of 5</strong> from 260+ customer reviews</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><div class="stat-num">4.9</div><div class="stat-lbl">Average customer rating</div></div>
+    <div><div class="stat-num">260+</div><div class="stat-lbl">Verified customer reviews</div></div>
+    <div><div class="stat-num">1952</div><div class="stat-lbl">Family owned since</div></div>
+    <div><div class="stat-num">70+</div><div class="stat-lbl">Years serving Springfield</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Septic Services Done Right</h2>
+      <p>Residential and commercial septic work across Robertson County, scheduled service and fast help when it can't wait.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">•</div><h3>Septic Pump-Outs</h3><p>Regular tank pumping on a schedule that fits your household, with thorough clean-outs and honest advice on timing.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Inspections &amp; Evaluations</h3><p>Real-estate inspections, routine checkups, and full system evaluations with plain-English reports.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Repairs &amp; Installations</h3><p>Baffles, lines, pumps, and full system replacements, installed to code and built to last.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Grease Trap Service</h3><p>Scheduled grease trap pumping and maintenance for restaurants and food service businesses.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Emergency Service</h3><p>Backups and overflows can't wait. Call for priority response when your system needs help now.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Trash &amp; Waste Pickup</h3><p>Reliable local trash service for homes and businesses throughout our Springfield service area.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why Springfield Calls Sunshine</h2>
+      <p>Three generations of the same family, and the same promise: honest work, fair pricing, and showing up when we say we will.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">•</div><h3>Family Owned Since 1952</h3><p>No corporate call center, when you call, you talk to the family that does the work.</p></div>
+      <div class="card"><div class="icon">•</div><h3>4.9 from 260+ Reviews</h3><p>Our neighbors keep the rating high because we keep the service honest.</p></div>
+      <div class="card"><div class="icon">📍</div><h3>Local, Not a Franchise</h3><p>Based in Springfield, TN. We know Robertson County soil, codes, and systems firsthand.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <h2>A Name Your Grandparents Knew</h2>
+    <p class="big">4.9 rating · 260+ reviews · Family owned since 1952</p>
+    <p>Same trucks, same family, same handshake standard, since 1952.</p>
+  </div>
+</div>
+
+<section id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Request Setup or Quote</h2>
+      <p>Fill out the form and we'll call you back, no error messages, no runaround.</p>
+    </div>
+
+    <div class="ba-toggle">
+      <button id="btnAfter" class="active" onclick="showPanel('after')">The fixed form</button>
+      <button id="btnBefore" onclick="showPanel('before')">What was wrong before</button>
+    </div>
+
+    <div class="ba-panel show" id="panel-after">
+      <div class="form-shell">
+        <h2>Request Setup or Quote</h2>
+        <p class="sub">Takes about a minute. We reply the same business day.</p>
+        <form id="quoteForm" onsubmit="return submitQuote(event)">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" required placeholder="Jane Miller">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" required placeholder="(615) 543-1761">
+          <label for="address">Service address</label>
+          <input id="address" name="address" type="text" required placeholder="1234 Hwy 49 E, Springfield, TN">
+          <label for="service">Service needed</label>
+          <select id="service" name="service" required>
+            <option value="">Choose a service…</option>
+            <option>Septic pump-out</option>
+            <option>Inspection / evaluation</option>
+            <option>Repair or installation</option>
+            <option>Grease trap service</option>
+            <option>Trash pickup setup</option>
+            <option>Emergency, needs attention now</option>
+          </select>
+          <label for="details">Tell us about the job (optional)</label>
+          <textarea id="details" name="details" placeholder="Tank size, last pump date, or what you're seeing…"></textarea>
+          <button class="btn green" type="submit" style="width:100%;margin-top:20px">Send My Request</button>
+          <p class="form-note">Prefer to talk? Call <a href="tel:+16155431761">(615) 543-1761</a>, a real person answers.</p>
+        </form>
+        <div id="formSuccess" class="success" style="display:none;margin-top:10px">Thanks, your request is in! We'll call you back shortly.</div>
+      </div>
+    </div>
+
+    <div class="ba-panel" id="panel-before">
+      <div class="ba-before">
+        <div class="err"><strong>Error:</strong> There was a problem submitting your request. Please try again.</div>
+        <div class="err"><strong>Error:</strong> There was a problem submitting your request. Please try again.</div>
+        <p style="font-size:.9rem;color:var(--muted)">The old page showed this error, and showed it twice. The form never actually sent. The fixed version above just works.</p>
+      </div>
+      <p class="ba-cap">Demo illustration of the original issue, shown for comparison only.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>Sunshine Septic &amp; Trash</h4><p>Family owned &amp; operated since 1952. Septic and trash service for Springfield, TN and Robertson County.</p></div>
+      <div><h4>Contact</h4><p>Phone: <a href="tel:+16155431761">(615) 543-1761</a><br>Springfield, TN 37172<br>Mon to Fri 8am to 5pm · Emergencies 24/7</p></div>
+      <div><h4>Services</h4><p>Septic pump-outs · Inspections · Repairs &amp; installs · Grease traps · Trash pickup</p></div>
+    </div>
+    <div class="fine">© 2026 Sunshine Septic &amp; Trash, Springfield, TN. Family owned since 1952.</div>
+  </div>
+</footer>
+
+<script>
+function submitQuote(e){e.preventDefault();
+  document.getElementById('quoteForm').style.display='none';
+  document.getElementById('formSuccess').style.display='block';
+  window.scrollTo({top:document.getElementById('formSuccess').offsetTop-120,behavior:'smooth'});
+  return false;}
+function showPanel(which){
+  document.getElementById('panel-after').classList.toggle('show',which==='after');
+  document.getElementById('panel-before').classList.toggle('show',which==='before');
+  document.getElementById('btnAfter').classList.toggle('active',which==='after');
+  document.getElementById('btnBefore').classList.toggle('active',which==='before');}
+</script>
+</body>
+</html>
