@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>White Heating &amp; Air Conditioning | HVAC in Billings, MT</title>
+<meta name="description" content="Over 20 years of heating and cooling service in Billings, MT. Furnace repair, AC installs, tune-ups and 24/7 emergency HVAC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0b5fa5;--blue-dk:#073d6b;--orange:#f2762e;--ice:#eef6fc;--ink:#23272b;--muted:#5c6b78}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',system-ui,sans-serif;color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:'Oswald',sans-serif;color:var(--blue-dk)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--blue-dk);color:#fff;font-size:.85rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:center}
+.topbar a{color:#ffd166;text-decoration:none;font-weight:700}
+nav{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .badge{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--blue) 50%,var(--orange) 50%);display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Oswald';font-weight:700;font-size:1.3rem}
+.logo b{font-family:'Oswald';font-size:1.35rem;color:var(--blue-dk);letter-spacing:.02em}
+.logo small{display:block;font-size:.68rem;color:var(--muted);letter-spacing:.22em;font-weight:600}
+nav ul{list-style:none;display:flex;gap:22px}
+nav ul a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+nav ul a:hover{color:var(--blue)}
+.btn{display:inline-block;background:var(--orange);color:#fff;font-weight:700;padding:14px 30px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#d65f1c}
+.btn.blue{background:var(--blue)}
+.hero{background:linear-gradient(100deg,var(--blue-dk) 0%,var(--blue) 65%,#0e7cc4 100%);color:#fff;padding:84px 0;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(242,118,46,.55),transparent 70%)}
+.hero .kicker{display:inline-block;background:#fff;color:var(--blue-dk);font-weight:700;font-size:.78rem;letter-spacing:.12em;padding:7px 16px;border-radius:999px;margin-bottom:16px}
+.hero h1{color:#fff;font-size:3rem;line-height:1.05;margin-bottom:14px;max-width:640px}
+.hero p.lead{color:#dcecf8;font-size:1.15rem;margin-bottom:26px;max-width:560px}
+.hero .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .rating{margin-top:22px;color:#dcecf8}
+.hero .rating strong{color:#ffd166}
+.stats{background:#fff;padding:36px 0;border-bottom:4px solid var(--orange)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;text-align:center}
+.stat-num{font-family:'Oswald';font-size:2.3rem;font-weight:600;color:var(--blue)}
+.stat-lbl{font-size:.85rem;color:var(--muted)}
+section{padding:64px 0}
+section.alt{background:var(--ice)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-head h2{font-size:2.2rem;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(7,61,107,.07)}
+.card .tag{font-size:.72rem;font-weight:700;letter-spacing:.1em;color:#fff;padding:4px 12px;border-radius:999px;display:inline-block;margin-bottom:12px}
+.tag.cool{background:var(--blue)}.tag.heat{background:var(--orange)}
+.card h3{font-size:1.35rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.consistent{background:var(--blue-dk);color:#dcecf8;padding:56px 0;text-align:center}
+.consistent h2{color:#fff;margin-bottom:14px}
+.consistent .years{font-family:'Oswald';font-size:1.8rem;color:#ffd166;margin:12px 0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.form-shell{background:#fff;border-radius:14px;padding:36px;box-shadow:0 8px 30px rgba(7,61,107,.12);border-top:6px solid var(--orange)}
+.form-shell h2{margin-bottom:6px}
+.form-shell .sub{color:var(--muted);margin-bottom:18px;font-size:.95rem}
+label{display:block;font-weight:600;font-size:.88rem;margin:13px 0 5px}
+input,select,textarea{width:100%;padding:11px 13px;border:1.5px solid #cfdae4;border-radius:7px;font-size:1rem;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,95,165,.12)}
+textarea{min-height:80px;resize:vertical}
+.form-shell .btn{width:100%;margin-top:18px}
+.success{background:#e6f4ea;border:2px solid #2e7d32;color:#1b5e20;padding:18px;border-radius:10px;font-weight:600;text-align:center}
+.side-points h3{margin-bottom:16px}
+.side-points ul{list-style:none}
+.side-points li{padding:12px 0;border-bottom:1px solid #e3ebf1;display:flex;gap:12px;align-items:flex-start}
+.side-points li:last-child{border:none}
+.side-points .tick{color:var(--blue);font-weight:700;font-size:1.2rem;line-height:1.4}
+footer{background:#101418;color:#aeb9c2;padding:48px 0 24px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-bottom:28px}
+footer h4{color:#fff;margin-bottom:10px;font-family:'Oswald';font-size:1.1rem}
+footer a{color:#9fd3ff;text-decoration:none}
+footer .fine{text-align:center;border-top:1px solid #2a3138;padding-top:18px;font-size:.8rem;color:#6c7883}
+@media(max-width:800px){.form-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}nav ul{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Serving Billings, MT &amp; Surrounding Areas · Over 20 Years in Business</span>
+    <a href="tel:+14062482162">Call (406) 248-2162</a>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><span class="badge">W</span><span><b>WHITE</b><small>HEATING &amp; AIR CONDITIONING</small></span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why White</a></li>
+      <li><a href="#quote">Get a Quote</a></li>
+    </ul>
+    <a class="btn" href="#quote" style="padding:10px 20px">Get a Quote</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="kicker">BILLINGS, MT · OVER 20 YEARS OF HVAC EXPERIENCE</span>
+    <h1>Comfort You Can Count On, Summer and Winter</h1>
+    <p class="lead">From furnace repairs on the coldest nights to AC installs before the heat hits, White Heating &amp; Air Conditioning keeps Billings homes comfortable, backed by over 20 years of hands-on experience.</p>
+    <div class="cta-row">
+      <a class="btn" href="#quote">Request a Free Quote</a>
+      <a class="btn blue" href="tel:+14062482162">Call (406) 248-2162</a>
+    </div>
+    <div class="rating">Rated <strong>4.9 out of 5</strong> across 1,800+ Google reviews</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><div class="stat-num">4.9</div><div class="stat-lbl">Average Google rating</div></div>
+    <div><div class="stat-num">1,800+</div><div class="stat-lbl">Google reviews</div></div>
+    <div><div class="stat-num">20+</div><div class="stat-lbl">Years serving Billings</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-lbl">Emergency HVAC service</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Heating &amp; Cooling Services</h2>
+      <p>Full-service HVAC for Billings homes, installed, repaired, and maintained by experienced local technicians.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="tag heat">HEATING</span><h3>Furnace Repair &amp; Install</h3><p>Fast, accurate furnace diagnostics and full system replacements sized right for Montana winters.</p></div>
+      <div class="card"><span class="tag cool">COOLING</span><h3>AC Repair &amp; Install</h3><p>Central air repair, replacement, and new installs that keep your home cool through the hottest weeks.</p></div>
+      <div class="card"><span class="tag heat">HEATING</span><h3>Heat Pumps</h3><p>Efficient year-round comfort with modern heat pump systems, installed and serviced by our team.</p></div>
+      <div class="card"><span class="tag cool">COOLING</span><h3>Tune-Ups &amp; Maintenance</h3><p>Seasonal checkups that catch small problems early, extend equipment life, and cut energy bills.</p></div>
+      <div class="card"><span class="tag heat">HEATING</span><h3>Indoor Air Quality</h3><p>Filtration, humidifiers, and ventilation upgrades for cleaner, healthier air inside your home.</p></div>
+      <div class="card"><span class="tag cool">COOLING</span><h3>24/7 Emergency Service</h3><p>No heat in January or no AC in July, our on-call techs respond around the clock.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="consistent">
+  <div class="wrap">
+    <h2>One Number, Everywhere You See It</h2>
+    <p class="years">Over 20 years of experience, on every page, every ad, every truck.</p>
+    <p>No mixed messages, no template filler. Just a clean, secure site that says the same thing about who we are everywhere you look.</p>
+  </div>
+</div>
+
+<section class="alt" id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Get Your Free HVAC Quote</h2>
+      <p>Tell us what's going on and we'll get back to you fast, usually the same day.</p>
+    </div>
+    <div class="form-grid">
+      <div class="form-shell">
+        <h2>Request a Quote</h2>
+        <p class="sub">Free estimates on installs and replacements.</p>
+        <form id="qform" onsubmit="return qsubmit(event)">
+          <label for="qn">Full name</label><input id="qn" required placeholder="Your name">
+          <label for="qp">Phone</label><input id="qp" type="tel" required placeholder="(406) 248-2162">
+          <label for="qa">Address</label><input id="qa" required placeholder="Street, Billings, MT">
+          <label for="qs">Service needed</label>
+          <select id="qs" required>
+            <option value="">Select…</option>
+            <option>Furnace repair</option>
+            <option>AC repair</option>
+            <option>New furnace install</option>
+            <option>New AC install</option>
+            <option>Heat pump service/install</option>
+            <option>Maintenance / tune-up</option>
+            <option>Emergency, no heat or no cool</option>
+          </select>
+          <label for="qm">Details</label><textarea id="qm" placeholder="System age, symptoms, or what you're looking for…"></textarea>
+          <button class="btn" type="submit">Send My Quote Request</button>
+        </form>
+        <div id="qok" class="success" style="display:none;margin-top:8px">Thanks, your request is in! We'll call you back shortly.</div>
+      </div>
+      <div class="side-points">
+        <h3>Why Billings Chooses White</h3>
+        <ul>
+          <li><span class="tick">✓</span><span><strong>Over 20 years</strong> of heating &amp; cooling experience in the Billings area.</span></li>
+          <li><span class="tick">✓</span><span><strong>4.9 rating from 1,800+ Google reviews</strong>, one of the most reviewed HVAC teams in town.</span></li>
+          <li><span class="tick">✓</span><span><strong>Upfront pricing</strong>, you approve the price before any work begins.</span></li>
+          <li><span class="tick">✓</span><span><strong>Licensed, insured technicians</strong> who show up on time and clean up after.</span></li>
+          <li><span class="tick">✓</span><span><strong>24/7 emergency response</strong> for no-heat and no-cool calls.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>WHITE HEATING &amp; AIR CONDITIONING</h4><p>Heating and cooling service for Billings, MT, over 20 years of experience.</p></div>
+      <div><h4>Contact</h4><p>Phone: <a href="tel:+14062482162">(406) 248-2162</a><br>Billings, MT<br>Mon to Fri 8am to 5pm · Emergencies 24/7</p></div>
+      <div><h4>Services</h4><p>Furnaces · AC · Heat pumps · Tune-ups · Indoor air quality</p></div>
+    </div>
+    <div class="fine">© 2026 White Heating &amp; Air Conditioning, Billings, MT.</div>
+  </div>
+</footer>
+
+<script>
+function qsubmit(e){e.preventDefault();document.getElementById('qform').style.display='none';document.getElementById('qok').style.display='block';window.scrollTo({top:document.getElementById('qok').offsetTop-140,behavior:'smooth'});return false;}
+</script>
+</body>
+</html>
