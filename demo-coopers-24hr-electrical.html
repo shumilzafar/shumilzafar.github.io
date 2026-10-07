@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coopers 24HR Electrical | Electricians in Merewether, NSW</title>
+<meta name="description" content="Cam and Jackson, 24-hour electricians in Merewether and Newcastle NSW. Switchboards, lighting, fault finding and emergency callouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#ffc400;--black:#141414;--dk:#1e1e1e;--ink:#222;--muted:#5f6368;--ice:#f7f7f5}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+h1,h2,h3{font-family:'Archivo',sans-serif;color:var(--black)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--black);color:#fff;font-size:.85rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:center}
+.topbar a{color:var(--yellow);text-decoration:none;font-weight:700}
+nav{background:var(--yellow);position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .bolt{width:42px;height:42px;background:var(--black);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--yellow);font-size:1.5rem;font-weight:900}
+.logo b{font-family:'Archivo';font-weight:800;font-size:1.3rem;color:var(--black)}
+.logo small{display:block;font-size:.68rem;font-weight:700;letter-spacing:.18em;color:#3a3a3a}
+nav ul{list-style:none;display:flex;gap:22px}
+nav ul a{text-decoration:none;color:var(--black);font-weight:700;font-size:.95rem}
+nav ul a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--black);color:var(--yellow);font-weight:700;padding:14px 30px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:1rem;font-family:'Archivo'}
+.btn:hover{background:#2a2a2a}
+.btn.yellow{background:var(--yellow);color:var(--black)}
+.hero{background:var(--black);color:#fff;padding:70px 0 84px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(-45deg,transparent 0 46px,rgba(255,196,0,.05) 46px 56px)}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center;position:relative}
+.hero .kicker{display:inline-block;background:var(--yellow);color:var(--black);font-weight:800;font-size:.78rem;letter-spacing:.12em;padding:7px 16px;border-radius:6px;margin-bottom:16px;font-family:'Archivo'}
+.hero h1{color:#fff;font-size:2.9rem;line-height:1.05;margin-bottom:14px;font-weight:900}
+.hero h1 .yl{color:var(--yellow)}
+.hero p.lead{color:#d8d8d8;font-size:1.12rem;margin-bottom:24px;max-width:520px}
+.hero .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .rating{margin-top:20px;color:#d8d8d8;font-size:.95rem}
+.hero .rating strong{color:var(--yellow)}
+.quote-card{background:#fff;border-radius:14px;padding:30px;color:var(--ink);box-shadow:0 14px 44px rgba(0,0,0,.45);border-top:8px solid var(--yellow)}
+.quote-card h3{font-size:1.5rem;margin-bottom:4px}
+.quote-card p{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+label{display:block;font-weight:600;font-size:.88rem;margin:11px 0 5px}
+input,select,textarea{width:100%;padding:11px 13px;border:1.5px solid #dcdcd8;border-radius:7px;font-size:1rem;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--black);box-shadow:0 0 0 3px rgba(255,196,0,.35)}
+textarea{min-height:64px;resize:vertical}
+.quote-card .btn{width:100%;margin-top:16px}
+.or-call{text-align:center;font-size:.9rem;margin-top:12px}
+.or-call a{color:var(--black);font-weight:800;text-decoration:none;font-size:1.15rem}
+.success{background:#e6f4ea;border:2px solid #2e7d32;color:#1b5e20;padding:18px;border-radius:10px;font-weight:600;text-align:center}
+.stats{background:var(--yellow);padding:44px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:20px;text-align:center}
+.stat-num{font-family:'Archivo';font-size:2.6rem;font-weight:900;color:var(--black)}
+.stat-lbl{font-size:.85rem;font-weight:600;color:#3a3a3a}
+section{padding:64px 0}
+section.alt{background:var(--ice)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-head h2{font-size:2.2rem;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-left:6px solid var(--yellow)}
+.card .icon{font-size:2rem;margin-bottom:10px}
+.card h3{font-size:1.25rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.meet{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.meet .panel{background:var(--black);color:#fff;border-radius:14px;padding:36px}
+.meet .panel h2{color:var(--yellow);margin-bottom:12px}
+.meet .panel p{color:#d8d8d8}
+.trust{background:#fff;border:3px solid var(--yellow);border-radius:14px;padding:40px;text-align:center;max-width:760px;margin:0 auto}
+.trust .stars{color:#e6a800;font-size:1.7rem;letter-spacing:.15em}
+.trust h2{margin:10px 0}
+.trust p{color:var(--muted);max-width:560px;margin:0 auto}
+.ba-toggle{text-align:center;margin-bottom:24px}
+.ba-toggle button{border:2px solid var(--black);background:#fff;color:var(--black);font-weight:700;padding:10px 22px;border-radius:999px;cursor:pointer;margin:0 6px;font-size:.9rem;font-family:'Archivo'}
+.ba-toggle button.active{background:var(--black);color:var(--yellow)}
+.ba-panel{display:none}
+.ba-panel.show{display:block}
+.ba-before{background:#fdf2f2;border:2px dashed #c62828;border-radius:12px;padding:28px;max-width:560px;margin:0 auto;text-align:center}
+.ba-before .zeros{display:flex;justify-content:center;gap:26px;margin:14px 0;font-family:'Archivo';font-weight:800}
+.ba-before .zeros span{font-size:1.8rem;color:#c62828}
+.ba-cap{font-size:.85rem;color:var(--muted);text-align:center;margin-top:10px}
+footer{background:var(--black);color:#bdbdbd;padding:48px 0 24px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-bottom:28px}
+footer h4{color:var(--yellow);margin-bottom:10px;font-family:'Archivo'}
+footer a{color:var(--yellow);text-decoration:none}
+footer .fine{text-align:center;border-top:1px solid #333;padding-top:18px;font-size:.8rem;color:#7a7a7a}
+@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.meet{grid-template-columns:1fr}.hero h1{font-size:2.2rem}nav ul{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>• 24-Hour Emergency Electricians · Merewether &amp; Newcastle, NSW</span>
+    <a href="tel:+61403287845">Call 0403 287 845</a>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><span class="bolt">•</span><span><b>COOPERS</b><small>24HR ELECTRICAL</small></span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#team">The Team</a></li>
+      <li><a href="#quote-hero">Request a Quote</a></li>
+    </ul>
+    <a class="btn" href="tel:+61403287845" style="padding:10px 20px">Call 24/7</a>
+  </div>
+</nav>
+
+<div class="hero" id="quote-hero">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker">MEREWETHER NSW · CAM &amp; JACKSON · 24HR CALL-OUTS</span>
+      <h1>Power Problems? <span class="yl">Sorted in One Call.</span></h1>
+      <p class="lead">Local sparkies Cam and Jackson handle everything from dead power points to full switchboard upgrades, and when it's an emergency, we're on the tools around the clock.</p>
+      <div class="cta-row">
+        <a class="btn yellow" href="#quote-form">• Request a Quote</a>
+        <a class="btn" href="tel:+61403287845" style="border:2px solid var(--yellow)">Call 0403 287 845</a>
+      </div>
+      <div class="rating">Rated <strong>4.9 out of 5</strong> from 110+ customer reviews</div>
+    </div>
+    <div class="quote-card" id="quote-form">
+      <h3>Request a Quote</h3>
+      <p>Above the fold, no digging around, tell us what's wrong and we'll call back fast.</p>
+      <form id="qform" onsubmit="return qsubmit(event)">
+        <label for="qn">Name</label><input id="qn" required placeholder="Your name">
+        <label for="qp">Phone</label><input id="qp" type="tel" required placeholder="04XX XXX XXX">
+        <label for="qs">Job type</label>
+        <select id="qs" required>
+          <option value="">Select…</option>
+          <option>Power point / light install</option>
+          <option>Switchboard upgrade</option>
+          <option>Fault finding</option>
+          <option>Safety switch testing</option>
+          <option>Emergency, power out now</option>
+        </select>
+        <label for="qm">Describe the job</label><textarea id="qm" placeholder="What's happening?"></textarea>
+        <button class="btn" type="submit">Send Quote Request</button>
+      </form>
+      <div id="qok" class="success" style="display:none;margin-top:8px">Request received, Cam or Jackson will call you back.</div>
+      <div class="or-call">Urgent? <a href="tel:+61403287845">0403 287 845</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><div class="stat-num" data-count="4.9" data-dec="1">0</div><div class="stat-lbl">Average customer rating</div></div>
+    <div><div class="stat-num" data-count="110" data-suffix="+">0</div><div class="stat-lbl">Customer reviews</div></div>
+    <div><div class="stat-num" data-count="24" data-suffix="/7">0</div><div class="stat-lbl">Emergency call-outs</div></div>
+    <div><div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-lbl">Licensed &amp; insured work</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Electrical Services</h2>
+      <p>Residential and commercial electrical across Merewether, Newcastle, and the Hunter, neat work, honest quotes.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">•</div><h3>24HR Emergency Call-Outs</h3><p>Power out, sparking outlets, burning smells, we answer and attend around the clock.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Switchboard Upgrades</h3><p>Old ceramic fuses swapped for modern safety-switch boards that actually protect your home.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Lighting &amp; Power Points</h3><p>Downlights, new power points, ceiling fans, and outdoor lighting, installed clean and level.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Fault Finding</h3><p>Tripping breakers, dead circuits, mystery outages, we trace it to the source and fix it properly.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Renovations &amp; New Builds</h3><p>Full electrical rough-in and fit-off for renos and new homes, coordinated with your builder.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Safety Checks &amp; Compliance</h3><p>Smoke alarm compliance, safety switch testing, and pre-purchase electrical inspections.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="team">
+  <div class="wrap meet">
+    <div class="panel">
+      <h2>Meet Cam &amp; Jackson</h2>
+      <p>Coopers 24HR Electrical is run by Cam and Jackson, two local sparkies who started the business because they were tired of tradies who don't show up. When you book with us, one of us does the work. Simple as that.</p>
+    </div>
+    <div>
+      <h2 style="margin-bottom:12px">The Coopers Standard</h2>
+      <p style="color:var(--muted)">Upfront quotes before we start. Shoe covers on, mess cleaned up. Certificates of compliance on every job. And if something's not right, we come back and make it right.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why the Counters Finally Count</h2>
+      <p>Real numbers, animated live, no more zeros, no stock-photo "testimonials".</p>
+    </div>
+    <div class="ba-toggle">
+      <button id="bAfter" class="active" onclick="ba('after')">The fixed counters</button>
+      <button id="bBefore" onclick="ba('before')">What was wrong before</button>
+    </div>
+    <div class="ba-panel show" id="p-after">
+      <div class="trust">
+        <div class="stars">★★★★★</div>
+        <h2>4.9 Rating · 110+ Reviews</h2>
+        <p>Rated 4.9 out of 5 across 110+ genuine customer reviews. No staged quotes, no stock photos, just the numbers our customers gave us.</p>
+      </div>
+    </div>
+    <div class="ba-panel" id="p-before">
+      <div class="ba-before">
+        <p style="font-weight:600">Before, the homepage stats displayed:</p>
+        <div class="zeros"><span>0</span><span>0</span><span>0</span><span>0</span></div>
+        <p style="font-size:.9rem;color:var(--muted)">"0 completed projects", "0 happy clients", counters that never counted, next to a testimonial with a stock photo. The fixed version above shows the real figures, animated.</p>
+      </div>
+      <p class="ba-cap">Demo illustration of the original issue, shown for comparison only.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>COOPERS 24HR ELECTRICAL</h4><p>Cam &amp; Jackson, 24-hour electricians serving Merewether, Newcastle &amp; the Hunter, NSW.</p></div>
+      <div><h4>Contact</h4><p>Phone: <a href="tel:+61403287845">0403 287 845</a> (24/7)<br>Merewether NSW 2291</p></div>
+      <div><h4>Services</h4><p>Emergency call-outs · Switchboards · Lighting · Fault finding · Safety checks</p></div>
+    </div>
+    <div class="fine">© 2026 Coopers 24HR Electrical, Merewether NSW. Licensed &amp; insured.</div>
+  </div>
+</footer>
+
+<script>
+function qsubmit(e){e.preventDefault();document.getElementById('qform').style.display='none';document.getElementById('qok').style.display='block';return false;}
+function ba(w){document.getElementById('p-after').classList.toggle('show',w==='after');document.getElementById('p-before').classList.toggle('show',w==='before');document.getElementById('bAfter').classList.toggle('active',w==='after');document.getElementById('bBefore').classList.toggle('active',w==='before');}
+(function(){
+  var els=document.querySelectorAll('.stat-num');var done=false;
+  function animate(el){
+    var target=parseFloat(el.getAttribute('data-count'));
+    var dec=parseInt(el.getAttribute('data-dec')||'0');
+    var suffix=el.getAttribute('data-suffix')||'';
+    var start=null,dur=1400;
+    function step(t){if(!start)start=t;var p=Math.min((t-start)/dur,1);
+      var e=1-Math.pow(1-p,3);var v=(target*e).toFixed(dec);
+      el.textContent=v+suffix;if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);}
+  function onScroll(){if(done)return;var r=document.querySelector('.stats').getBoundingClientRect();
+    if(r.top<window.innerHeight&&r.bottom>0){done=true;els.forEach(animate);window.removeEventListener('scroll',onScroll);}}
+  window.addEventListener('scroll',onScroll);onScroll();
+})();
+</script>
+</body>
+</html>
