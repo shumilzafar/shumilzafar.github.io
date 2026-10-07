@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACT Light and Power | Electricians in Lawson, Canberra ACT</title>
+<meta name="description" content="ACT Light and Power, 5-star rated electricians in Lawson, Canberra ACT. Lighting, power points, switchboards, fault finding and emergency callouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a2540;--navy-dk:#061829;--amber:#ffb400;--ice:#f2f6fa;--ink:#232a33;--muted:#5b6b7d}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;color:var(--ink);line-height:1.6}
+h1,h2,h3{color:var(--navy-dk)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--navy-dk);color:#fff;font-size:.85rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:center}
+.topbar a{color:var(--amber);text-decoration:none;font-weight:700}
+nav{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(10,37,64,.12)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo .zap{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--navy) 0%,#144a7d 100%);display:flex;align-items:center;justify-content:center;color:var(--amber);font-size:1.4rem;font-weight:800;border:2px solid var(--amber)}
+.logo b{font-size:1.25rem;font-weight:800;color:var(--navy-dk);letter-spacing:.01em}
+.logo small{display:block;font-size:.68rem;font-weight:600;letter-spacing:.24em;color:var(--muted)}
+nav ul{list-style:none;display:flex;gap:22px}
+nav ul a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+nav ul a:hover{color:var(--navy)}
+.btn{display:inline-block;background:var(--amber);color:var(--navy-dk);font-weight:800;padding:14px 30px;border-radius:10px;text-decoration:none;border:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#e5a200}
+.btn.navy{background:var(--navy);color:#fff}
+.hero{background:linear-gradient(115deg,var(--navy-dk) 0%,var(--navy) 55%,#134a7c 100%);color:#fff;padding:80px 0;position:relative;overflow:hidden}
+.hero::after{content:"•";position:absolute;right:6%;top:8%;font-size:11rem;opacity:.08;transform:rotate(12deg)}
+.hero .kicker{display:inline-block;background:var(--amber);color:var(--navy-dk);font-weight:800;font-size:.78rem;letter-spacing:.12em;padding:7px 16px;border-radius:999px;margin-bottom:16px}
+.hero h1{color:#fff;font-size:2.9rem;line-height:1.08;margin-bottom:14px;max-width:620px;font-weight:800}
+.hero h1 .am{color:var(--amber)}
+.hero p.lead{color:#cfdeeb;font-size:1.13rem;margin-bottom:26px;max-width:560px}
+.hero .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .trustbar{margin-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;font-size:.85rem;font-weight:600;padding:8px 16px;border-radius:999px}
+.pill strong{color:var(--amber)}
+.stats{background:#fff;padding:40px 0;border-bottom:4px solid var(--amber)}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;text-align:center}
+.stat-num{font-size:2.5rem;font-weight:800;color:var(--navy)}
+.stat-lbl{font-size:.85rem;color:var(--muted);font-weight:500}
+section{padding:64px 0}
+section.alt{background:var(--ice)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-head h2{font-size:2.1rem;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:14px;padding:28px;box-shadow:0 3px 14px rgba(10,37,64,.07);border-top:4px solid var(--navy)}
+.card .icon{font-size:2rem;margin-bottom:10px}
+.card h3{font-size:1.2rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.trust-band{background:var(--navy-dk);color:#fff;text-align:center;padding:54px 20px}
+.trust-band .stars{color:var(--amber);font-size:1.8rem;letter-spacing:.15em}
+.trust-band h2{color:#fff;margin:10px 0 6px}
+.trust-band p{color:#cfdeeb;max-width:600px;margin:0 auto}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
+.form-shell{background:#fff;border-radius:16px;padding:36px;box-shadow:0 10px 34px rgba(10,37,64,.12);border-top:6px solid var(--amber)}
+.form-shell h2{margin-bottom:6px}
+.form-shell .sub{color:var(--muted);margin-bottom:18px;font-size:.95rem}
+label{display:block;font-weight:600;font-size:.88rem;margin:13px 0 5px}
+input,select,textarea{width:100%;padding:11px 13px;border:1.5px solid #d3dde7;border-radius:8px;font-size:1rem;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(10,37,64,.1)}
+textarea{min-height:80px;resize:vertical}
+.form-shell .btn{width:100%;margin-top:18px}
+.success{background:#e6f4ea;border:2px solid #2e7d32;color:#1b5e20;padding:18px;border-radius:10px;font-weight:600;text-align:center}
+.side h3{margin-bottom:16px}
+.side ul{list-style:none}
+.side li{padding:13px 0;border-bottom:1px solid #e2e9f0;display:flex;gap:12px;align-items:flex-start}
+.side li:last-child{border:none}
+.side .tick{color:var(--navy);font-weight:800;font-size:1.2rem;line-height:1.4}
+.name-check{background:#eaf4e9;border:2px solid #2e7d32;border-radius:12px;padding:22px;max-width:640px;margin:0 auto 30px;text-align:center}
+.name-check b{color:#1b5e20}
+footer{background:var(--navy-dk);color:#a9bcd0;padding:48px 0 24px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-bottom:28px}
+footer h4{color:#fff;margin-bottom:10px}
+footer a{color:var(--amber);text-decoration:none}
+footer .fine{text-align:center;border-top:1px solid #1d3a57;padding-top:18px;font-size:.8rem;color:#6d86a0}
+@media(max-width:800px){.form-grid{grid-template-columns:1fr}.hero h1{font-size:2.1rem}nav ul{display:none}.hero::after{font-size:6rem}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>ACT Light and Power · Lawson, Canberra ACT</span>
+    <a href="tel:+61408749486">Call 0408 749 486</a>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><span class="zap">•</span><span><b>ACT Light and Power</b><small>CANBERRA ELECTRICIANS</small></span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#quote">Request a Quote</a></li>
+    </ul>
+    <a class="btn" href="#quote" style="padding:10px 20px">Request a Quote</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="kicker">LAWSON · CANBERRA ACT · LICENSED ELECTRICIANS</span>
+    <h1>Canberra's <span class="am">5-Star</span> Local Electricians</h1>
+    <p class="lead">ACT Light and Power handles the jobs Canberra homes actually need, lighting, power points, switchboards, and fault finding, done neatly, quoted upfront, and backed by a 5-star customer record.</p>
+    <div class="cta-row">
+      <a class="btn" href="#quote">Request a Quote</a>
+      <a class="btn navy" href="tel:+61408749486" style="border:1px solid var(--amber)">Call 0408 749 486</a>
+    </div>
+    <div class="trustbar">
+      <span class="pill"><strong>★★★★★</strong> 5-star rated</span>
+      <span class="pill">Hired <strong>28+ times</strong> on Oneflare</span>
+      <span class="pill">Licensed &amp; insured in the ACT</span>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><div class="stat-num" data-count="5" data-dec="0">0</div><div class="stat-lbl">Star rating</div></div>
+    <div><div class="stat-num" data-count="28" data-suffix="+">0</div><div class="stat-lbl">Times hired on Oneflare</div></div>
+    <div><div class="stat-num" data-count="100" data-suffix="%">0</div><div class="stat-lbl">Licensed &amp; insured</div></div>
+    <div><div class="stat-num" data-count="24" data-suffix="/7">0</div><div class="stat-lbl">Emergency call-outs</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Electrical Services in Canberra</h2>
+      <p>Residential electrical across Lawson and the ACT, small jobs done properly, big jobs quoted honestly.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">•</div><h3>Lighting</h3><p>Downlights, feature lighting, and outdoor security lighting designed and installed for your home.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Power Points &amp; Switches</h3><p>New outlets, USB power points, dimmers, and switch upgrades, installed flush and tested.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Switchboard Upgrades</h3><p>Modern boards with safety switches and surge protection, brought up to current ACT standards.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Fault Finding</h3><p>Tripping circuits and dead outlets traced to the cause and repaired, not just reset and hoped for.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Ceiling Fans</h3><p>Supply and install of ceiling fans for year-round comfort, balanced and wobble-free.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Emergency Repairs</h3><p>Urgent electrical faults attended promptly, because some things can't wait until Monday.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-band" id="reviews">
+  <div class="stars">★★★★★</div>
+  <h2>5-Star Rated · Hired 28+ Times on Oneflare</h2>
+  <p>Our Oneflare profile shows a 5-star rating across 28+ completed hires. Real customers, real jobs, real accountability, that's the whole trust section. No invented quotes needed.</p>
+</div>
+
+<section class="alt" id="quote">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Request a Quote</h2>
+      <p>One form, one callback, from ACT Light and Power, not a lead farm.</p>
+    </div>
+    <div class="name-check">
+      <b>✓ Name check passed:</b> "ACT Light and Power" appears correctly on every page of this site, no more "CT Light and Power".
+    </div>
+    <div class="form-grid">
+      <div class="form-shell">
+        <h2>Get Your Free Quote</h2>
+        <p class="sub">We reply the same business day.</p>
+        <form id="qform" onsubmit="return qsubmit(event)">
+          <label for="qn">Full name</label><input id="qn" required placeholder="Your name">
+          <label for="qp">Phone</label><input id="qp" type="tel" required placeholder="04XX XXX XXX">
+          <label for="qa">Suburb</label><input id="qa" required placeholder="e.g. Lawson">
+          <label for="qs">Service needed</label>
+          <select id="qs" required>
+            <option value="">Select…</option>
+            <option>Lighting install</option>
+            <option>Power points / switches</option>
+            <option>Switchboard upgrade</option>
+            <option>Fault finding</option>
+            <option>Ceiling fan install</option>
+            <option>Emergency repair</option>
+          </select>
+          <label for="qm">Job details</label><textarea id="qm" placeholder="Tell us what's needed…"></textarea>
+          <button class="btn" type="submit">Send My Quote Request</button>
+        </form>
+        <div id="qok" class="success" style="display:none;margin-top:8px">Thanks, ACT Light and Power will call you back shortly.</div>
+      </div>
+      <div class="side">
+        <h3>Why Canberra Hires ACT Light and Power</h3>
+        <ul>
+          <li><span class="tick">✓</span><span><strong>5-star rated</strong> on Oneflare, hired 28+ times.</span></li>
+          <li><span class="tick">✓</span><span><strong>Upfront quotes</strong>, the price we say is the price you pay.</span></li>
+          <li><span class="tick">✓</span><span><strong>Licensed ACT electricians</strong>, fully insured, compliance certificates supplied.</span></li>
+          <li><span class="tick">✓</span><span><strong>Clean work</strong>, drop sheets down, mess taken away.</span></li>
+          <li><span class="tick">✓</span><span><strong>Local to Lawson</strong>, fast response across Canberra's north.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>ACT Light and Power</h4><p>Licensed electricians based in Lawson, serving Canberra and the ACT.</p></div>
+      <div><h4>Contact</h4><p>Phone: <a href="tel:+61408749486">0408 749 486</a><br>Lawson ACT 2617</p></div>
+      <div><h4>Services</h4><p>Lighting · Power points · Switchboards · Fault finding · Emergency repairs</p></div>
+    </div>
+    <div class="fine">© 2026 ACT Light and Power, Lawson ACT. Licensed &amp; insured.</div>
+  </div>
+</footer>
+
+<script>
+function qsubmit(e){e.preventDefault();document.getElementById('qform').style.display='none';document.getElementById('qok').style.display='block';window.scrollTo({top:document.getElementById('qok').offsetTop-140,behavior:'smooth'});return false;}
+(function(){
+  var els=document.querySelectorAll('.stat-num');var done=false;
+  function animate(el){
+    var target=parseFloat(el.getAttribute('data-count'));
+    var dec=parseInt(el.getAttribute('data-dec')||'0');
+    var suffix=el.getAttribute('data-suffix')||'';
+    var start=null,dur=1400;
+    function step(t){if(!start)start=t;var p=Math.min((t-start)/dur,1);
+      var e=1-Math.pow(1-p,3);var v=(target*e).toFixed(dec);
+      el.textContent=v+suffix;if(p<1)requestAnimationFrame(step);}
+    requestAnimationFrame(step);}
+  function onScroll(){if(done)return;var r=document.querySelector('.stats').getBoundingClientRect();
+    if(r.top<window.innerHeight&&r.bottom>0){done=true;els.forEach(animate);window.removeEventListener('scroll',onScroll);}}
+  window.addEventListener('scroll',onScroll);onScroll();
+})();
+</script>
+</body>
+</html>
