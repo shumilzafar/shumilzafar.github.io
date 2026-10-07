@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shorty's Plumbing &amp; Heating Inc. | Winnipeg Plumbers Since 1983</title>
+<meta name="description" content="Family-owned Winnipeg plumbing and heating company since 1983. Repairs, installs, drain service and 24/7 emergencies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d2f4f;--navy-dk:#082136;--red:#c8102e;--ice:#eef4f8;--ink:#222;--muted:#5d6b78}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Barlow',system-ui,sans-serif;color:var(--ink);line-height:1.6}
+h1,h2,h3{font-family:'Barlow Condensed',sans-serif;color:var(--navy-dk);letter-spacing:.01em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--navy-dk);color:#fff;font-size:.85rem;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:center}
+.topbar a{color:#fff;text-decoration:none;font-weight:700}
+.topbar .email{color:#9fd3ff}
+nav{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 20px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo .drop{width:40px;height:40px;border-radius:50% 50% 50% 4px;transform:rotate(45deg);background:linear-gradient(135deg,var(--red),var(--navy));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:'Barlow Condensed'}
+.logo .drop span{transform:rotate(-45deg)}
+.logo b{font-family:'Barlow Condensed';font-size:1.4rem;color:var(--navy-dk)}
+.logo small{display:block;font-size:.7rem;color:var(--muted);font-weight:500;letter-spacing:.12em}
+nav ul{list-style:none;display:flex;gap:22px}
+nav ul a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+nav ul a:hover{color:var(--red)}
+.btn{display:inline-block;background:var(--red);color:#fff;font-weight:700;padding:14px 30px;border-radius:8px;text-decoration:none;border:none;cursor:pointer;font-size:1rem}
+.btn:hover{background:#a50d27}
+.btn.navy{background:var(--navy)}
+.hero{background:linear-gradient(105deg,var(--navy-dk) 0%,var(--navy) 60%,#1a4a73 100%);color:#fff;padding:80px 0}
+.hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+.hero .kicker{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:.78rem;letter-spacing:.1em;padding:6px 14px;border-radius:4px;margin-bottom:16px}
+.hero h1{color:#fff;font-size:3rem;line-height:1.05;margin-bottom:14px}
+.hero p.lead{color:#d7e5f1;font-size:1.15rem;margin-bottom:26px;max-width:520px}
+.hero .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero .rating{margin-top:20px;color:#d7e5f1;font-size:.95rem}
+.hero .rating strong{color:#ffd166}
+.quote-card{background:#fff;border-radius:14px;padding:30px;color:var(--ink);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+.quote-card h3{font-size:1.5rem;margin-bottom:4px}
+.quote-card p{font-size:.9rem;color:var(--muted);margin-bottom:14px}
+label{display:block;font-weight:600;font-size:.88rem;margin:12px 0 5px}
+input,select,textarea{width:100%;padding:11px 13px;border:1.5px solid #d4dce3;border-radius:7px;font-size:1rem;font-family:inherit}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(13,47,79,.12)}
+textarea{min-height:70px;resize:vertical}
+.quote-card .btn{width:100%;margin-top:16px}
+.or-call{text-align:center;font-size:.9rem;margin-top:12px}
+.or-call a{color:var(--red);font-weight:700;text-decoration:none;font-size:1.1rem}
+.success{background:#e6f4ea;border:2px solid #2e7d32;color:#1b5e20;padding:18px;border-radius:10px;font-weight:600;text-align:center}
+section{padding:64px 0}
+section.alt{background:var(--ice)}
+.sec-head{text-align:center;max-width:680px;margin:0 auto 40px}
+.sec-head h2{font-size:2.2rem;margin-bottom:10px}
+.sec-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:#fff;border-radius:12px;padding:28px;box-shadow:0 2px 12px rgba(13,47,79,.07);border-top:4px solid var(--navy)}
+.card .icon{font-size:2rem;margin-bottom:10px}
+.card h3{font-size:1.3rem;margin-bottom:8px}
+.card p{font-size:.95rem;color:var(--muted)}
+.stats{background:var(--red);color:#fff;padding:40px 0}
+.stats .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px;text-align:center}
+.stat-num{font-family:'Barlow Condensed';font-size:2.4rem;font-weight:700}
+.stat-lbl{font-size:.85rem;opacity:.9}
+.trust-line{background:var(--navy-dk);color:#fff;text-align:center;padding:44px 20px}
+.trust-line .stars{color:#ffd166;font-size:1.6rem;letter-spacing:.15em}
+.trust-line h2{color:#fff;margin:8px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.contact-card{background:#fff;border-radius:12px;padding:32px;box-shadow:0 2px 12px rgba(13,47,79,.07)}
+.contact-card h3{margin-bottom:14px;font-size:1.5rem}
+.big-mail{display:inline-block;background:var(--ice);border:2px solid var(--navy);border-radius:10px;padding:14px 20px;font-size:1.15rem;font-weight:700;color:var(--navy);text-decoration:none;margin:6px 0}
+.big-mail:hover{background:var(--navy);color:#fff}
+.big-tel{display:inline-block;background:var(--red);color:#fff;border-radius:10px;padding:14px 20px;font-size:1.15rem;font-weight:700;text-decoration:none;margin:6px 0}
+.contact-card p{color:var(--muted);font-size:.95rem;margin-top:12px}
+.ba-toggle{text-align:center;margin-bottom:24px}
+.ba-toggle button{border:2px solid var(--navy);background:#fff;color:var(--navy);font-weight:700;padding:10px 22px;border-radius:999px;cursor:pointer;margin:0 6px;font-size:.9rem}
+.ba-toggle button.active{background:var(--navy);color:#fff}
+.ba-panel{display:none}
+.ba-panel.show{display:block}
+.ba-before{background:#fdf2f2;border:2px dashed var(--red);border-radius:12px;padding:26px;max-width:560px;margin:0 auto;text-align:center}
+.ba-before .fake-mail{font-family:monospace;background:#fff;border:1px solid #e5b8bf;color:#999;padding:12px;border-radius:8px;display:inline-block;margin-top:10px}
+.ba-cap{font-size:.85rem;color:var(--muted);text-align:center;margin-top:10px}
+footer{background:#0a0a0a;color:#b9c4cd;padding:48px 0 24px;font-size:.92rem}
+footer .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-bottom:28px}
+footer h4{color:#fff;margin-bottom:10px;font-family:'Barlow Condensed';font-size:1.15rem}
+footer a{color:#9fd3ff;text-decoration:none}
+footer .fine{text-align:center;border-top:1px solid #2a2a2a;padding-top:18px;font-size:.8rem;color:#7c8894}
+@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.hero h1{font-size:2.2rem}nav ul{display:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>24/7 Emergency Service · Winnipeg, MB</span>
+    <span><a class="email" href="mailto:info@shortysplumbing.ca">info@shortysplumbing.ca</a> &nbsp;·&nbsp; <a href="tel:+12047993959">(204) 799-3959</a></span>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#"><span class="drop"><span>S</span></span><span><b>SHORTY'S</b><small>PLUMBING &amp; HEATING INC.</small></span></a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#why">Why Shorty's</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn" href="tel:+12047993959" style="padding:10px 20px">Call Now</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="kicker">FAMILY-OWNED SINCE 1983 · WINNIPEG, MB</span>
+      <h1>Winnipeg's Plumbers for Over 40 Years</h1>
+      <p class="lead">Leaky faucets to full heating installs, one local, family-run team handles your plumbing and heating right, the first time.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+12047993959">• Click to Call for a Quote</a>
+        <a class="btn navy" href="#contact" style="border:1px solid #9fd3ff">Email Us</a>
+      </div>
+      <div class="rating">Rated <strong>4.8 out of 5</strong> across 560+ Google reviews</div>
+    </div>
+    <div class="quote-card">
+      <h3>Get a Fast Quote</h3>
+      <p>Request a call back, or just tap the button below to call us directly.</p>
+      <form id="qform" onsubmit="return qsubmit(event)">
+        <label for="qn">Name</label>
+        <input id="qn" required placeholder="Your name">
+        <label for="qp">Phone</label>
+        <input id="qp" type="tel" required placeholder="(204) 799-3959">
+        <label for="qs">What do you need?</label>
+        <select id="qs" required>
+          <option value="">Select a service…</option>
+          <option>Plumbing repair</option>
+          <option>Drain cleaning</option>
+          <option>Water heater install/repair</option>
+          <option>Furnace / heating service</option>
+          <option>Emergency, water everywhere</option>
+        </select>
+        <button class="btn" type="submit">Request My Quote</button>
+      </form>
+      <div id="qok" class="success" style="display:none;margin-top:8px">Got it, we'll call you back shortly.</div>
+      <div class="or-call">In a hurry? <a href="tel:+12047993959">(204) 799-3959</a></div>
+    </div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div><div class="stat-num">4.8</div><div class="stat-lbl">Average Google rating</div></div>
+    <div><div class="stat-num">560+</div><div class="stat-lbl">Google reviews</div></div>
+    <div><div class="stat-num">1983</div><div class="stat-lbl">Family-owned since</div></div>
+    <div><div class="stat-num">24/7</div><div class="stat-lbl">Emergency service</div></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Plumbing &amp; Heating Services</h2>
+      <p>Residential and light commercial work across Winnipeg, repairs, installs, and maintenance done by licensed pros.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">•</div><h3>Plumbing Repairs</h3><p>Leaks, drips, running toilets, low pressure, fixed cleanly and explained clearly before we start.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Drain Cleaning</h3><p>Clogged sinks, tubs, and main lines cleared with professional augers, no harsh chemical guesswork.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Heating &amp; Furnaces</h3><p>Furnace repairs, tune-ups, and installs to keep your home warm through a Winnipeg winter.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Water Heaters</h3><p>Tank and tankless water heater installation, repair, and replacement sized to your household.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Fixture Installs</h3><p>Faucets, toilets, showers, and laundry rough-ins, installed straight, sealed, and tested.</p></div>
+      <div class="card"><div class="icon">•</div><h3>24/7 Emergencies</h3><p>Burst pipes and major leaks don't wait for morning. Neither do we, call any time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Why Winnipeg Calls Shorty's</h2>
+      <p>A family name on every truck, and a reputation built one fixed pipe at a time since 1983.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">•</div><h3>Family-Owned Since 1983</h3><p>Over 40 years of the same family standing behind the work. That's not a slogan, it's the business model.</p></div>
+      <div class="card"><div class="icon">•</div><h3>4.8 from 560+ Google Reviews</h3><p>Hundreds of Winnipeg homeowners rate us among the city's most trusted plumbing teams.</p></div>
+      <div class="card"><div class="icon">•</div><h3>Straight Talk, Fair Pricing</h3><p>We explain the problem, quote the fix up front, and never sell you work you don't need.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust-line">
+  <div class="stars">★★★★★</div>
+  <h2>4.8 Rating · 560+ Google Reviews</h2>
+  <p>Family-owned in Winnipeg since 1983.</p>
+</div>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Talk to a Real Person</h2>
+      <p>Call, email, or use the form, every message goes to our Winnipeg office, not a call center.</p>
+    </div>
+
+    <div class="ba-toggle">
+      <button id="bAfter" class="active" onclick="ba('after')">The fixed contact info</button>
+      <button id="bBefore" onclick="ba('before')">What was wrong before</button>
+    </div>
+
+    <div class="ba-panel show" id="p-after">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email Us</h3>
+          <a class="big-mail" href="mailto:info@shortysplumbing.ca">• info@shortysplumbing.ca</a>
+          <p>Send photos of the problem, we'll reply with honest advice and a quote.</p>
+          <h3 style="margin-top:22px">Call Us</h3>
+          <a class="big-tel" href="tel:+12047993959">• (204) 799-3959</a>
+          <p>Tap to call. Emergencies answered 24/7.</p>
+        </div>
+        <div class="contact-card">
+          <h3>Send a Message</h3>
+          <form id="cform" onsubmit="return csubmit(event)">
+            <label for="cn">Name</label><input id="cn" required placeholder="Your name">
+            <label for="ce">Email</label><input id="ce" type="email" required placeholder="you@email.com">
+            <label for="cm">Message</label><textarea id="cm" required placeholder="What's going on?"></textarea>
+            <button class="btn navy" type="submit" style="width:100%;margin-top:16px">Send Message</button>
+          </form>
+          <div id="cok" class="success" style="display:none;margin-top:8px">Message sent, we'll be in touch soon.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ba-panel" id="p-before">
+      <div class="ba-before">
+        <p style="font-weight:600">Before, every contact email on the site displayed like this:</p>
+        <span class="fake-mail">[email protected]</span>
+        <p style="margin-top:14px;font-size:.9rem;color:var(--muted)">A placeholder customers couldn't click, copy, or reply to. The fixed version above shows the real address, clickable on every device.</p>
+      </div>
+      <p class="ba-cap">Demo illustration of the original issue, shown for comparison only.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div><h4>SHORTY'S PLUMBING &amp; HEATING INC.</h4><p>Family-owned plumbing and heating in Winnipeg, Manitoba since 1983.</p></div>
+      <div><h4>Contact</h4><p>Email: <a href="mailto:info@shortysplumbing.ca">info@shortysplumbing.ca</a><br>Phone: <a href="tel:+12047993959">(204) 799-3959</a><br>Winnipeg, MB · 24/7 emergency service</p></div>
+      <div><h4>Services</h4><p>Plumbing repairs · Drains · Heating &amp; furnaces · Water heaters · Fixtures</p></div>
+    </div>
+    <div class="fine">© 2026 Shorty's Plumbing &amp; Heating Inc., Winnipeg, MB. Family-owned since 1983.</div>
+  </div>
+</footer>
+
+<script>
+function qsubmit(e){e.preventDefault();document.getElementById('qform').style.display='none';document.getElementById('qok').style.display='block';return false;}
+function csubmit(e){e.preventDefault();document.getElementById('cform').style.display='none';document.getElementById('cok').style.display='block';return false;}
+function ba(w){document.getElementById('p-after').classList.toggle('show',w==='after');document.getElementById('p-before').classList.toggle('show',w==='before');document.getElementById('bAfter').classList.toggle('active',w==='after');document.getElementById('bBefore').classList.toggle('active',w==='before');}
+</script>
+</body>
+</html>
