@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goldseal Roofing Ltd | Roofers in Chatham, Kent</title>
+<meta name="description" content="Goldseal Roofing Ltd, family-run roofers in Chatham, Kent. New roofs, roof repairs, flat roofing, leadwork. 152 Checkatrade reviews at 9.89/10. Request a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Source Sans 3',system-ui,sans-serif;color:#2b2b28;line-height:1.65;background:#fbfaf7}
+h1,h2,h3,.hd{font-family:'Playfair Display',Georgia,serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.topbar{background:#1c1a16;color:#e9e4d8;font-size:14px;padding:9px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center}
+.topbar a{color:#d4a72c;font-weight:700;text-decoration:none;font-size:16px}
+.hero{background:linear-gradient(rgba(22,20,15,.8),rgba(22,20,15,.68)),repeating-linear-gradient(90deg,#2a251c 0 26px,#241f17 26px 52px);color:#fff;padding:72px 0 62px}
+.seal{display:inline-flex;align-items:center;gap:10px;border:2px solid #d4a72c;border-radius:40px;padding:8px 22px;color:#d4a72c;font-weight:700;letter-spacing:2px;font-size:13px;margin-bottom:20px}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.08;margin-bottom:16px}
+.hero h1 em{color:#d4a72c;font-style:normal}
+.hero p.lead{font-size:18px;max-width:640px;color:#ddd6c4;margin-bottom:28px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 32px;border-radius:4px;font-weight:700;text-decoration:none;font-size:17px}
+.btn-gold{background:#d4a72c;color:#1c1a16}
+.btn-gold:hover{background:#c09625}
+.btn-outline{background:transparent;color:#fff;border:2px solid #d4a72c}
+.btn-outline:hover{background:rgba(212,167,44,.15)}
+.hero-meta{margin-top:26px;display:flex;gap:28px;flex-wrap:wrap;font-size:15px;color:#cfc7b2}
+.hero-meta strong{color:#d4a72c}
+section{padding:58px 0}
+section h2{font-size:clamp(28px,4vw,38px);margin-bottom:8px;color:#1c1a16}
+.sub{color:#6b655a;margin-bottom:32px;font-size:17px}
+.center{text-align:center}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:22px}
+.card{background:#fff;border-radius:8px;padding:30px;box-shadow:0 4px 16px rgba(28,26,22,.07);border-top:4px solid #d4a72c}
+.card h3{font-size:21px;margin-bottom:10px;color:#1c1a16}
+.card p{color:#57534b;font-size:15px}
+.why{background:#1c1a16;color:#f0ebdd}
+.why h2{color:#fff}
+.why .sub{color:#bdb49e}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:8px}
+.why-item{background:#262219;border:1px solid #3a342a;border-radius:8px;padding:28px}
+.why-item h3{color:#d4a72c;font-size:20px;margin-bottom:10px}
+.why-item p{color:#cfc7b2;font-size:15px}
+.contact-band{background:#f3efe6;padding:58px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
+.contact-info h2{margin-bottom:14px}
+.contact-info p{color:#57534b;margin-bottom:14px}
+.contact-line{background:#fff;border-radius:8px;padding:18px 20px;margin-bottom:14px;box-shadow:0 2px 10px rgba(28,26,22,.06)}
+.contact-line strong{display:block;color:#1c1a16;font-size:15px}
+.contact-line a{color:#8a6d1c;font-weight:700;text-decoration:none;font-size:19px}
+.formcard{background:#fff;border-radius:10px;padding:36px;box-shadow:0 8px 30px rgba(28,26,22,.1);border:1px solid #e5dfd0}
+.formcard h3{font-size:24px;margin-bottom:6px;color:#1c1a16}
+.formcard>p{color:#6b655a;font-size:15px;margin-bottom:8px}
+label{display:block;font-weight:600;font-size:14px;margin:15px 0 6px;color:#1c1a16}
+input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #cfc8b4;border-radius:6px;font-size:16px;font-family:inherit;background:#fffdf8}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#d4a72c;box-shadow:0 0 0 3px rgba(212,167,44,.22)}
+textarea{min-height:110px;resize:vertical}
+.btn-submit{background:#1c1a16;color:#fff;border:none;width:100%;cursor:pointer;margin-top:22px;font-size:18px}
+.btn-submit:hover{background:#2e2a22}
+.formnote{text-align:center;font-size:13px;color:#8a8474;margin-top:12px}
+.success{display:none;background:#e6f7ec;border:1.5px solid #35a05a;color:#14532d;padding:18px;border-radius:8px;margin-top:20px;font-weight:600;text-align:center}
+footer{background:#12100c;color:#a89f88;padding:42px 0 26px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer strong{color:#fff}
+footer a{color:#d4a72c;text-decoration:none}
+.copyright{margin-top:24px;padding-top:16px;border-top:1px solid #2a251c;width:100%;font-size:13px;color:#7d7460}
+@media(max-width:560px){.formcard{padding:26px 18px}}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <span>Family-run roofers &bull; Chatham, Kent &bull; Daniel Ryder</span>
+    <a href="tel:+447955020574">&#9742; 07955 020574</a>
+  </div>
+</div>
+<header class="hero">
+  <div class="wrap">
+    <span class="seal">&#9733; GOLDSEAL ROOFING LTD &#9733;</span>
+    <h1>Chatham's Family Roofers, <em>Sealed with Quality</em></h1>
+    <p class="lead">From full roof replacements to urgent repairs, Daniel Ryder and the Goldseal team look after homes across Medway and Kent, with honest pricing and workmanship backed in writing.</p>
+    <div class="cta-row">
+      <a class="btn btn-gold" href="#contact">Request a Free Quote</a>
+      <a class="btn btn-outline" href="tel:+447955020574">&#9742; 07955 020574</a>
+    </div>
+    <div class="hero-meta">
+      <span><strong>152</strong> Checkatrade reviews</span>
+      <span><strong>9.89/10</strong> average rating</span>
+      <span><strong>Family-run</strong> business</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2 class="center">Roofing Services</h2>
+    <p class="sub center">One team for your whole roof, from ridge to gutter.</p>
+    <div class="grid3">
+      <div class="card"><h3>New Roofs</h3><p>Complete re-roofs in slate and tile, with new battens, membrane and leadwork, finished with a written guarantee.</p></div>
+      <div class="card"><h3>Roof Repairs</h3><p>Leaks, slipped tiles, storm damage and worn pointing fixed promptly by roofers who know Kent roofs inside out.</p></div>
+      <div class="card"><h3>Flat Roofing</h3><p>Long-life EPDM and felt systems for extensions, porches and garages, installed properly, built to stay dry.</p></div>
+      <div class="card"><h3>Leadwork</h3><p>Lead flashing, valleys and box gutters renewed or repaired by skilled leadworkers for a watertight finish.</p></div>
+      <div class="card"><h3>Guttering &amp; Fascias</h3><p>UPVC guttering, fascias and soffits replaced to protect your brickwork and keep rainwater where it belongs.</p></div>
+      <div class="card"><h3>Chimney Repairs</h3><p>Repointing, flaunching and chimney rebuilds carried out safely, with all rubble cleared away.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <h2 class="center">Why Choose Goldseal</h2>
+    <p class="sub center">The reasons Medway homeowners keep recommending us.</p>
+    <div class="why-grid">
+      <div class="why-item"><h3>152 reviews at 9.89/10</h3><p>Our Checkatrade record speaks for itself, earned job by job across Chatham and Kent.</p></div>
+      <div class="why-item"><h3>Family-run, not a sales team</h3><p>You deal directly with Daniel and his team. No pushy salesmen, no inflated quotes, just honest roofing.</p></div>
+      <div class="why-item"><h3>Written guarantees</h3><p>Every new roof and major repair comes with a written guarantee, so you're covered long after we've left.</p></div>
+      <div class="why-item"><h3>Tidy and reliable</h3><p>We turn up when we say we will, protect your garden and driveway, and leave the site spotless.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact-band" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Contact Goldseal Roofing</h2>
+        <p>Call us for urgent repairs, or send the form and we'll arrange your free, no-obligation quote. We cover Chatham, Rochester, Gillingham, Maidstone and the wider Medway and Kent area.</p>
+        <div class="contact-line">
+          <strong>Phone</strong>
+          <a href="tel:+447955020574">07955 020574</a>
+        </div>
+        <div class="contact-line">
+          <strong>Based in</strong>
+          Chatham, Kent, serving Medway &amp; surrounding areas
+        </div>
+        <div class="contact-line">
+          <strong>Reviews</strong>
+          152 Checkatrade reviews at 9.89/10
+        </div>
+      </div>
+      <div class="formcard">
+        <h3>Request a Free Quote</h3>
+        <p>Fill in the form and Daniel will get back to you to arrange your visit.</p>
+        <form id="quoteForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" placeholder="e.g. Emma Clarke">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="e.g. 07955 020574">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="e.g. emma@example.co.uk">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service&hellip;</option>
+            <option>New roof</option>
+            <option>Roof repair</option>
+            <option>Flat roofing</option>
+            <option>Leadwork</option>
+            <option>Guttering / fascias</option>
+            <option>Chimney repairs</option>
+          </select>
+          <label for="details">Describe the job (optional)</label>
+          <textarea id="details" name="details" placeholder="e.g. Leak around the chimney breast after heavy rain"></textarea>
+          <button class="btn btn-submit" type="submit">Request My Free Quote</button>
+          <p class="formnote">Free written quote, no obligation. Details used only to arrange your quote.</p>
+        </form>
+        <div class="success" id="formSuccess">&#10003; Thanks, your request is in. We'll be in touch shortly to arrange your free quote.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <strong>Goldseal Roofing Ltd</strong><br>
+      Daniel Ryder, Family-run<br>
+      Chatham, Kent
+    </div>
+    <div>
+      <strong>Contact</strong><br>
+      <a href="tel:+447955020574">07955 020574</a>
+    </div>
+    <div>
+      <strong>Reviews</strong><br>
+      152 Checkatrade reviews at 9.89/10
+    </div>
+    <div class="copyright">&copy; 2026 Goldseal Roofing Ltd. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = document.getElementById('quoteForm');
+  if(!f.checkValidity()){ f.reportValidity(); return; }
+  document.getElementById('formSuccess').style.display = 'block';
+  f.reset();
+  document.getElementById('formSuccess').scrollIntoView({behavior:'smooth', block:'center'});
+});
+</script>
+</body>
+</html>
